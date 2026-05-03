@@ -18,7 +18,7 @@ export default function HeroSection() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 pt-12 md:py-16 overflow-hidden">
+      <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 pt-12 md:py-16 ">
         <div className="relative max-w-4xl text-center text-white z-10">
           {/* Badge */}
           <motion.div
@@ -98,7 +98,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, y: 40 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.4, duration: 0.8 }}
-        className="relative w-full mt-0 md:mt-40 z-20 h-[300px] sm:h-[350px] md:h-[400px]"
+        className="relative w-full mt-1 md:mt-40 z-20 h-[300px] sm:h-[350px] md:h-[400px]"
       >
         {/* Gradients */}
         <div className="absolute left-0 top-0 bottom-0 w-1/2 bg-gradient-to-r from-white/40 via-white/40 to-transparent blur-3xl pointer-events-none" />
