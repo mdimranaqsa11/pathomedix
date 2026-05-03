@@ -1,14 +1,16 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const dreamt = localFont({
+  src: [
+    { path: "/fonts/dreamt_thin.woff2", weight: "100", style: "normal" },
+    { path: "/fonts/dreamt_regular.woff2", weight: "300", style: "normal" },
+    { path: "/fonts/dreamt_nurmal.woff2", weight: "400", style: "normal" },
+    { path: "/fonts/dreamt_md.woff2", weight: "500", style: "normal" },
+    { path: "/fonts/dreamt_bold.woff2", weight: "700", style: "normal" },
+  ],
+  display: "swap",
 });
 
 export const metadata = {
@@ -18,10 +20,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${dreamt.className} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
