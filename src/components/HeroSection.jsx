@@ -18,7 +18,7 @@ export default function HeroSection() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 pt-12 md:py-16 ">
+      <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 py-12 md:py-16 ">
         <div className="relative max-w-4xl text-center text-white z-10">
           {/* Badge */}
           <motion.div
