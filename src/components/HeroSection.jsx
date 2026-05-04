@@ -20,11 +20,15 @@ export default function HeroSection() {
       {/* Hero Section */}
       <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 py-12 md:py-16 ">
         <div className="relative max-w-4xl text-center text-white z-10">
+          <p className="mb-6 text-base tracking-wider">
+            Wait... Samething Amazing
+          </p>
+
           {/* Badge */}
           <motion.div
             initial={{ opacity: 0, y: -10 }}
             animate={{ opacity: 1, y: 0 }}
-            className="inline-block mb-6 sm:mb-8 md:mb-10 uppercase px-3 sm:px-4 py-1 text-xs sm:text-sm rounded-full bg-white/20 border border-white/30 backdrop-blur-md"
+            className="inline-block mb-4 sm:mb-6 md:mb-8 uppercase px-3 sm:px-4 py-1 text-xs sm:text-[15px] rounded-full bg-white/20 border border-white/30 backdrop-blur-md"
           >
             Coming Soon
           </motion.div>
