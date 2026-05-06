@@ -149,7 +149,7 @@ export default function HeroSection() {
           </div>
           {/* Phone Image */}
           <img
-            src="/images/phonePatho.png"
+            src="/images/slazzer-preview-pb2sj.png"
             alt="Phone Screen"
             className="w-[300px] md:w-[360px] lg:w-[420px] h-full object-contain"
           />
