@@ -104,7 +104,7 @@ export default function Header() {
             <div className="border-t border-black/5 mt-2 pt-3 flex flex-col gap-2">
               {/* Call Button */}
               <a
-                href="tel:+919999999999"
+                href="tel:+917011733779"
                 className="flex items-center justify-center gap-2 rounded-lg border border-black/10 bg-white px-4 py-3 text-sm font-medium text-black transition hover:border-black/20 hover:bg-black/[0.02]"
               >
                 <Phone size={16} />
@@ -113,7 +113,7 @@ export default function Header() {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/7011733779"
                 target="_blank"
                 className="flex items-center justify-center gap-2 rounded-lg bg-[#9084e5] px-4 py-3 text-sm font-medium text-white shadow-[0_10px_25px_rgba(144,132,229,0.35)] transition hover:scale-[1.02]"
               >
