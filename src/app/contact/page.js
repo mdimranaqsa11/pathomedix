@@ -67,10 +67,10 @@ export default function Contact() {
                     Phone
                   </h3>
                   <a
-                    href="tel:+919999999999"
+                    href="tel:+917011733779"
                     className="text-xs sm:text-sm text-black/70 hover:text-[#9084e5] transition"
                   >
-                    +91 (999) 999-9999
+                    +91 7011 733779
                   </a>
                 </div>
               </div>
@@ -90,10 +90,10 @@ export default function Contact() {
                     Email
                   </h3>
                   <a
-                    href="mailto:support@pathomedix.com"
+                    href="mailto:support@carepathomedix@gmail.com"
                     className="text-xs sm:text-sm text-black/70 hover:text-[#9084e5] transition"
                   >
-                    support@pathomedix.com
+                    carepathomedix@gmail.com
                   </a>
                 </div>
               </div>

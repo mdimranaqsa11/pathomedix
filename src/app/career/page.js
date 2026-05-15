@@ -5,6 +5,15 @@ import { MapPin, Briefcase, Clock } from "lucide-react";
 
 const jobs = [
   {
+    title: "Full Stack Developer",
+    department: "Develoment",
+    location: "Delhi, India",
+    type: "Full-time",
+    experience: "3-5 years",
+    description:
+      "Lead product strategy and vision for our healthcare platform.",
+  },
+  {
     title: "Product Manager",
     department: "Product",
     location: "Delhi, India",

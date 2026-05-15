@@ -53,7 +53,7 @@ export default function AboutUs() {
       {/* Hero Section */}
       <div className="mx-auto max-w-7xl px-3 sm:px-5 lg:px-8 py-12 sm:py-16 lg:py-24">
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center text-black mb-8 sm:mb-12">
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-black mb-8 sm:mb-12">
           About Us
         </h1>
 

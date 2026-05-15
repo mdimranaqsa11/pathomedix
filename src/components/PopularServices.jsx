@@ -8,9 +8,9 @@ const services = [
   {
     title: "Hydra Facial",
     rating: "4.9",
-    reviews: "18K",
+    reviews: "8K",
     price: "₹799",
-    originalPrice: "₹1299",
+    originalPrice: "₹1499",
     subtitle: "Deep skin hydration & glow treatment",
     description:
       "Professional hydrafacial treatment using advanced technology for deep hydration and radiant glow. Suitable for all skin types.",
@@ -20,7 +20,7 @@ const services = [
   {
     title: "Laser Hair Removal",
     rating: "4.8",
-    reviews: "11K",
+    reviews: "7K",
     price: "₹999",
     originalPrice: "₹1699",
     subtitle: "Smooth and long-lasting hair reduction",
@@ -32,9 +32,9 @@ const services = [
   {
     title: "Acne Treatment",
     rating: "4.9",
-    reviews: "9K",
-    price: "₹699",
-    originalPrice: "₹1199",
+    reviews: "4K",
+    price: "₹899",
+    originalPrice: "₹1499",
     subtitle: "Advanced care for clear healthy skin",
     description:
       "Comprehensive acne treatment using dermatologist-approved methods for clear and healthy skin.",
@@ -45,8 +45,8 @@ const services = [
     title: "Skin Brightening",
     rating: "4.7",
     reviews: "14K",
-    price: "₹899",
-    originalPrice: "₹1499",
+    price: "₹1199",
+    originalPrice: "₹2299",
     subtitle: "Glow enhancement & pigmentation care",
     description:
       "Professional skin brightening and pigmentation care for an even, radiant complexion.",
@@ -57,8 +57,8 @@ const services = [
     title: "Anti-Aging Therapy",
     rating: "4.8",
     reviews: "7K",
-    price: "₹1099",
-    originalPrice: "₹1899",
+    price: "₹1499",
+    originalPrice: "₹2499",
     subtitle: "Professional youthful skin solutions",
     description:
       "Premium anti-aging therapy combining multiple treatments for youthful, rejuvenated skin.",
@@ -79,7 +79,7 @@ export default function PopularServices() {
             Glow confidently with PathoMedix
           </h2>
 
-          <button className="hidden h-9 w-9 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 lg:flex flex-shrink-0">
+          <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
             <ArrowRight size={14} />
           </button>
         </div>

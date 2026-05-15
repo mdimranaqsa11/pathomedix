@@ -54,7 +54,7 @@ export default function Header() {
         <div className="hidden items-center gap-2 sm:gap-3 md:flex flex-shrink-0">
           {/* Call Button */}
           <a
-            href="tel:+919999999999"
+            href="tel:+917011733779"
             className="flex h-10 sm:h-11 items-center gap-1.5 sm:gap-2 rounded-full border border-black/10 bg-white px-3 sm:px-5 text-xs sm:text-sm font-medium text-black transition hover:border-black/20 hover:bg-black/[0.02] whitespace-nowrap flex-shrink-0"
           >
             <Phone size={14} className="sm:w-[16px] sm:h-[16px]" />
@@ -63,7 +63,7 @@ export default function Header() {
 
           {/* WhatsApp Button */}
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/917011733779"
             target="_blank"
             className="flex h-10 sm:h-11 items-center gap-1.5 sm:gap-2 rounded-full bg-[#9084e5] px-3 sm:px-5 text-xs sm:text-sm font-medium text-white shadow-[0_10px_25px_rgba(144,132,229,0.35)] transition hover:scale-[1.02] whitespace-nowrap flex-shrink-0"
           >

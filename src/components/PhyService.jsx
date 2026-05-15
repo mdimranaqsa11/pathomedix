@@ -8,9 +8,9 @@ const services = [
   {
     title: "Back Pain Therapy",
     rating: "4.9",
-    reviews: "18K",
+    reviews: "1K",
     price: "₹799",
-    originalPrice: "₹1299",
+    originalPrice: "₹1399",
     subtitle: "Advanced therapy for lower back pain relief",
     image:
       "https://img.magnific.com/free-photo/physiotherapist-doing-healing-treatment-womans-back-back-pain-patient-treatment-medical-doctor-massage-therapistoffice-syndrome_657921-323.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80",
@@ -18,7 +18,7 @@ const services = [
   {
     title: "Sports Injury Recovery",
     rating: "4.8",
-    reviews: "11K",
+    reviews: "800",
     price: "₹999",
     originalPrice: "₹1699",
     subtitle: "Muscle recovery & rehabilitation sessions",
@@ -28,9 +28,9 @@ const services = [
   {
     title: "Neck Pain Treatment",
     rating: "4.9",
-    reviews: "9K",
+    reviews: "1k",
     price: "₹699",
-    originalPrice: "₹1199",
+    originalPrice: "₹1399",
     subtitle: "Professional therapy for neck stiffness & pain",
     image:
       "https://img.magnific.com/premium-photo/doctor-doing-neck-adjustment_13339-123407.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80",
@@ -38,9 +38,9 @@ const services = [
   {
     title: "Post Surgery Rehab",
     rating: "4.7",
-    reviews: "14K",
-    price: "₹899",
-    originalPrice: "₹1499",
+    reviews: "4K",
+    price: "₹999",
+    originalPrice: "₹1699",
     subtitle: "Personalized recovery after surgery treatment",
     image:
       "https://img.magnific.com/premium-photo/doctor-helping-cancer-patient-woman-wearing-head-scarf-with-walker_33799-15487.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80",
@@ -49,8 +49,8 @@ const services = [
     title: "Home Visit Physio",
     rating: "4.8",
     reviews: "7K",
-    price: "₹1099",
-    originalPrice: "₹1899",
+    price: "₹699",
+    originalPrice: "₹1599",
     subtitle: "Expert physiotherapy services at your home",
     image:
       "https://img.magnific.com/free-photo/physiotherapist-helping-elderly-patient-with-hand-exercise-physiotherapy-clinic_662251-1734.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80",
@@ -66,10 +66,10 @@ export default function PhyServices() {
         {/* Heading */}
         <div className="mb-8 sm:mb-10 lg:mb-12 flex items-center justify-between gap-3">
           <h2 className="text-base sm:text-xl lg:text-3xl font-bold text-[#1a2b6b] leading-tight">
-            Glow confidently with PathoMedix
+            Forget Pain with PathoMedix
           </h2>
 
-          <button className="hidden h-9 w-9 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 lg:flex flex-shrink-0">
+          <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
             <ArrowRight size={14} />
           </button>
         </div>
@@ -235,7 +235,7 @@ export default function PhyServices() {
             <div className="sticky bottom-0 bg-white border-t border-black/5 px-4 sm:px-6 py-4 flex gap-3">
               {/* Call Button */}
               <a
-                href="tel:+919999999999"
+                href="tel:+917011733779"
                 className="flex-1 flex items-center justify-center gap-2 rounded-lg border border-black/10 bg-white px-4 py-3 text-sm font-medium text-black transition hover:border-black/20 hover:bg-black/[0.02]"
               >
                 <Phone size={18} />
@@ -244,7 +244,7 @@ export default function PhyServices() {
 
               {/* WhatsApp Button */}
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/917011733779"
                 target="_blank"
                 className="flex-1 flex items-center justify-center gap-2 rounded-lg bg-[#9084e5] px-4 py-3 text-sm font-medium text-white shadow-[0_10px_25px_rgba(144,132,229,0.35)] transition hover:scale-[1.02]"
               >

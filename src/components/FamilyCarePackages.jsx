@@ -77,6 +77,9 @@ export default function FamilyCarePackages() {
             <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#1a2b6b]">
               Most booked Packages
             </h2>
+            <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
+              <ArrowRight size={14} />
+            </button>
           </div>
 
           {/* Carousel */}
