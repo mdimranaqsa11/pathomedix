@@ -1,198 +1,191 @@
+// app/components/HeroSection.jsx
 "use client";
 
-import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import {
+  Activity,
+  FlaskConical,
+  HeartPulse,
+  Pill,
+  ScanLine,
+  Sparkles,
+} from "lucide-react";
+
+const services = [
+  {
+    title: "Medical Stores",
+    icon: Pill,
+  },
+  {
+    title: "Diagnostic Labs",
+    icon: FlaskConical,
+  },
+  {
+    title: "Physiotherapy",
+    icon: Activity,
+  },
+  {
+    title: "Prescription Scan",
+    icon: ScanLine,
+  },
+  {
+    title: "Cosmetology",
+    icon: Sparkles,
+  },
+  {
+    title: "Home Healthcare",
+    icon: HeartPulse,
+  },
+];
 
 export default function HeroSection() {
   return (
-    <div className="bg-[#9084e5] m-2 sm:m-4 md:m-6 rounded-2xl sm:rounded-3xl overflow-hidden">
-      {/* Header */}
-      <header className="flex justify-between items-center px-4 sm:px-6 md:px-8 pt-4 sm:pt-5">
-        <h1 className="text-white text-lg sm:text-xl md:text-2xl">
-          PathoMedix
-        </h1>
-
-        <button className="px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 rounded-full text-[10px] sm:text-xs uppercase bg-white text-[#9084e5] shadow-md hover:scale-105 transition">
-          Download
-        </button>
-      </header>
-
-      {/* Hero Section */}
-      <section className="relative w-full flex flex-col items-center justify-center px-4 sm:px-6 py-12 md:py-16 ">
-        <div className="relative max-w-4xl text-center text-white z-10">
-          <p className="mb-6 text-base tracking-wider">
-            Wait... Samething Amazing
-          </p>
-
+    <section className="relative overflow-hidden bg-white">
+      <div className="mx-auto grid  max-w-7xl grid-cols-1 gap-14 px-5 pb-14 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pt-16">
+        {/* LEFT CONTENT */}
+        <div className="flex flex-col justify-center">
           {/* Badge */}
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            className="inline-block mb-4 sm:mb-6 md:mb-8 uppercase px-3 sm:px-4 py-1 text-xs sm:text-[15px] rounded-full bg-white/20 border border-white/30 backdrop-blur-md"
-          >
-            Coming Soon
-          </motion.div>
+          <div className="mb-6 inline-flex w-fit items-center rounded-full border border-[#9084e5]/15 bg-[#9084e5]/10 px-4 py-2 text-xs font-medium text-[#9084e5]">
+            Healthcare Services Platform
+          </div>
 
           {/* Heading */}
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[68px] font-normal leading-tight md:leading-[60px] lg:leading-[70px] mb-4 sm:mb-6"
-          >
-            Find Medicines & Labs <br className="hidden sm:block" />
-            near you, effortlessly
-          </motion.h1>
+          <h1 className="max-w-2xl text-2xl sm:text-5xl font-medium leading-[1.05] tracking-tight text-black">
+            Healthcare services <br /> at your doorstep
+          </h1>
 
-          {/* Subtext */}
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2 }}
-            className="text-sm sm:text-base md:text-lg lg:text-[20px] text-white/80 mb-6 sm:mb-8 md:mb-10 max-w-xl sm:max-w-2xl mx-auto"
-          >
-            Upload your prescription, discover nearby medical stores and labs,
-            and connect instantly — all in one smart app.
-          </motion.p>
+          {/* Description */}
+          <p className="mt-6 max-w-xl sm:text-base text-sm  text-black/60">
+            Find trusted medical stores, diagnostic labs, physiotherapy,
+            prescription scanning, and home healthcare services all in one
+            modern platform.
+          </p>
 
-          {/* Buttons */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.3 }}
-            className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 w-full sm:w-auto"
-          >
-            {/* Primary */}
-            <button
-              className="w-full sm:w-auto relative px-6 sm:px-7 py-3 rounded-full text-[#6f63e9] font-medium overflow-hidden
-              bg-white/80 backdrop-blur-xl
-              shadow-[0_8px_25px_rgba(0,0,0,0.15),inset_0_1px_2px_rgba(255,255,255,0.6)]
-              border border-white/40
-              hover:scale-105 active:scale-95 transition-all duration-300"
-            >
-              <span className="absolute inset-0 rounded-full bg-gradient-to-b from-white/60 to-transparent opacity-70"></span>
-              <span className="relative z-10 text-sm sm:text-base">
-                Download Now
-              </span>
+          {/* Search */}
+          <div className="mt-8 hidden md:flex flex-col gap-3 rounded-3xl border border-black/10 bg-white p-3 shadow-[0_20px_60px_rgba(0,0,0,0.06)] sm:flex-row">
+            <input
+              type="text"
+              placeholder="Search medicines, labs, physiotherapy..."
+              className="h-14 flex-1 rounded-2xl border border-black/5 bg-[#f8f8fc] px-5 text-sm outline-none placeholder:text-black/35"
+            />
+
+            <button className="h-14 rounded-2xl bg-[#9084e5] px-7 text-sm font-medium text-white shadow-[0_10px_30px_rgba(144,132,229,0.35)] transition hover:scale-[1.01]">
+              Search Now
             </button>
+          </div>
 
-            {/* Secondary */}
-            <button
-              className="w-full sm:w-auto relative px-6 sm:px-7 py-3 rounded-full text-white font-medium overflow-hidden
-              bg-white/10 backdrop-blur-xl
-              border border-white/30
-              shadow-[0_8px_25px_rgba(0,0,0,0.2),inset_0_1px_2px_rgba(255,255,255,0.3)]
-              hover:bg-white/20 hover:scale-105 active:scale-95 transition-all duration-300"
-            >
-              <span className="absolute inset-0 rounded-full bg-gradient-to-b from-white/40 to-transparent opacity-50"></span>
-              <span className="relative z-10 text-sm sm:text-base">
-                Notify Me
-              </span>
-            </button>
-          </motion.div>
+          {/* Services Grid */}
+          <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+
+              return (
+                <div
+                  key={index}
+                  className="group rounded-xl sm:rounded-2xl lg:rounded-3xl border border-black/5 bg-[#fafafe] p-2.5 sm:p-3.5 lg:p-5 transition hover:-translate-y-1 hover:border-[#9084e5]/20 hover:bg-white hover:shadow-[0_20px_40px_rgba(144,132,229,0.08)]"
+                >
+                  <div className="flex h-8 w-8 sm:h-10 lg:h-12 sm:w-10 lg:w-12 items-center justify-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#9084e5]/10 text-[#9084e5]">
+                    <Icon
+                      size={16}
+                      className="sm:w-5 lg:w-6 sm:h-5 lg:h-6"
+                      strokeWidth={2.2}
+                    />
+                  </div>
+
+                  <h3 className="mt-2 sm:mt-3 lg:mt-4 text-xs sm:text-sm lg:text-sm font-semibold text-black line-clamp-2">
+                    {service.title}
+                  </h3>
+                </div>
+              );
+            })}
+          </div>
         </div>
 
-        {/* Blur Effects */}
-        <div className="absolute top-5 left-5 sm:top-10 sm:left-10 w-40 sm:w-60 md:w-72 h-40 sm:h-60 md:h-72 bg-white/20 rounded-full blur-3xl opacity-30" />
-        <div className="absolute bottom-5 right-5 sm:bottom-10 sm:right-10 w-40 sm:w-60 md:w-72 h-40 sm:h-60 md:h-72 bg-white/20 rounded-full blur-3xl opacity-30" />
-      </section>
+        {/* RIGHT img */}
+        <div className="relative hidden lg:flex items-center justify-center">
+          <div className="grid w-full max-w-3xl grid-cols-2 gap-6">
+            {/* LEFT */}
+            <div className="flex flex-col gap-6">
+              {/* Top */}
+              <div className="overflow-hidden rounded-[2.5rem]">
+                <img
+                  src="/images/medical-h.jpeg"
+                  alt="Physiotherapy"
+                  className="h-[340px] w-full object-cover transition duration-700 hover:scale-[1.04]"
+                />
+              </div>
 
-      {/* Phone Section (UNCHANGED core) */}
-      <motion.div
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-        className="relative w-full mt-1 md:mt-40 z-20 h-[300px] sm:h-[350px] md:h-[400px]"
-      >
-        {/* Gradients */}
-        <div className="absolute left-0 top-0 bottom-0 w-1/2 bg-gradient-to-r from-white/40 via-white/40 to-transparent blur-3xl pointer-events-none" />
-        <div className="absolute right-0 top-0 bottom-0 w-1/2 bg-gradient-to-l from-white/40 via-white/40 to-transparent blur-3xl pointer-events-none" />
+              {/* Bottom */}
+              <div className="overflow-hidden rounded-[2.5rem]">
+                <img
+                  src="https://img.magnific.com/premium-vector/cupping-therapy-illustration-design_327364-663.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80"
+                  alt="Medical Service"
+                  className="h-[260px] w-full object-cover transition duration-700 hover:scale-[1.04]"
+                />
+              </div>
+            </div>
 
-        <div className="absolute -bottom-33 md:-bottom-100 left-1/2 -translate-x-1/2 flex justify-center">
-          <div className="absolute md:-left-1/2 -left-1/3 top-1/3 sm:w-40 md:w-80">
-            <div className="p-2 sm:p-3 md:p-4 rounded-lg md:rounded-2xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
-              <div className="flex gap-1.5 sm:gap-2 md:gap-3 items-start">
-                {/* Icon */}
-                <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7 rounded-full flex items-center justify-center bg-green-500/90 shadow-inner">
-                  <Check className="text-white md:size-5 size-2" />
-                </div>
+            {/* RIGHT */}
+            <div className="flex flex-col gap-6 pt-12">
+              {/* Top */}
+              <div className="overflow-hidden rounded-[2.5rem]">
+                <img
+                  src="https://img.magnific.com/free-photo/friendly-hospital-phlebotomist-collecting-blood-sample-from-patient-lab-preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room_657921-879.jpg?t=st=1778607457~exp=1778611057~hmac=2f9edc6de5f104d5ec1906754de79f01a58d8bebe58bc5a0fbb1f2051af5bb94&w=740"
+                  alt="Blood Test"
+                  className="h-[260px] w-full object-cover transition duration-700 hover:scale-[1.04]"
+                />
+              </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <h1 className="text-[8px] sm:text-[11px] md:text-[15px] font-medium text-gray-900 leading-tight">
-                    Nearby Medical Store
-                  </h1>
-
-                  <p className="text-[7px] sm:text-[10px] md:text-[13px] text-gray-500 mt-0.5 sm:mt-1">
-                    Sharma Medical Store • 0.6 km
-                  </p>
-
-                  {/* Status */}
-                  <div className="flex gap-1 sm:gap-2 mt-1 sm:mt-2 md:mt-3 flex-wrap">
-                    <div className="inline-flex items-center gap-1 sm:gap-2 px-1.5 sm:px-2.5 py-[2px] sm:py-1 rounded-full bg-green-50 border border-green-100">
-                      <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full bg-green-500"></span>
-                      <span className="text-[6px] sm:text-[9px] md:text-[11px] font-medium text-green-600">
-                        Open
-                      </span>
-                    </div>
-
-                    <div className="inline-flex items-center gap-1 sm:gap-2 px-1.5 sm:px-2.5 py-[2px] sm:py-1 rounded-full bg-green-50 border border-green-100">
-                      <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full bg-green-500"></span>
-                      <span className="text-[6px] sm:text-[9px] md:text-[11px] font-medium text-green-600">
-                        Delivery
-                      </span>
-                    </div>
-                  </div>
-                </div>
+              {/* Bottom */}
+              <div className="overflow-hidden rounded-[2.5rem]">
+                <img
+                  src="/images/physiotherapist.jpg"
+                  alt="Physiotherapy"
+                  className="h-[340px] w-full object-cover transition duration-700 hover:scale-[1.04]"
+                />
               </div>
             </div>
           </div>
-          {/* Phone Image */}
-          <img
-            src="/images/slazzer-preview-pb2sj.png"
-            alt="Phone Screen"
-            className="w-[300px] md:w-[360px] lg:w-[420px] h-full object-contain"
-          />
-          <div className="absolute md:-right-1/2 -right-1/3 top-[10%]  md:w-80">
-            <div className="p-2 sm:p-3 md:p-4 rounded-lg md:rounded-2xl bg-white/80 backdrop-blur-xl border border-white/40 shadow-[0_6px_20px_rgba(0,0,0,0.08)]">
-              <div className="flex gap-1.5 sm:gap-2 md:gap-3 items-start">
-                {/* Icon */}
-                <div className="w-4 h-4 sm:w-5 sm:h-5 md:w-7 md:h-7 rounded-full flex items-center justify-center bg-green-500/90 shadow-inner">
-                  <Check className="text-white md:size-5 size-2" />
-                </div>
 
-                {/* Content */}
-                <div className="flex-1">
-                  <h1 className="text-[8px] sm:text-[11px] md:text-[15px] font-medium text-gray-900 leading-tight">
-                    Lab Tests Available
-                  </h1>
+          {/* Floating Card 1 */}
+          <div className="absolute bottom-8 left-0 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
+            <p className="text-xs font-medium uppercase tracking-wide text-black/40">
+              Prescription Scan
+            </p>
 
-                  <p className="text-[7px] sm:text-[10px] md:text-[13px] text-gray-500 mt-0.5 sm:mt-1">
-                    CBC • Thyroid • Blood Sugar
-                  </p>
+            <div className="mt-3">
+              <h4 className="text-sm font-semibold text-black">
+                AI Prescription Detection
+              </h4>
 
-                  {/* Status */}
-                  <div className="flex gap-1 sm:gap-2 mt-1 sm:mt-2 md:mt-3 flex-wrap">
-                    <div className="inline-flex items-center gap-1 sm:gap-2 px-1.5 sm:px-2.5 py-[2px] sm:py-1 rounded-full bg-blue-50 border border-blue-100">
-                      <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full bg-blue-500"></span>
-                      <span className="text-[6px] sm:text-[9px] md:text-[11px] font-medium text-blue-600">
-                        Home
-                      </span>
-                    </div>
+              <p className="mt-1 text-sm text-black/55">
+                Paracetamol, Azithromycin detected
+              </p>
+            </div>
+          </div>
 
-                    <div className="inline-flex items-center gap-1 sm:gap-2 px-1.5 sm:px-2.5 py-[2px] sm:py-1 rounded-full bg-blue-50 border border-blue-100">
-                      <span className="h-1 w-1 sm:h-1.5 sm:w-1.5 md:h-2 md:w-2 rounded-full bg-blue-500"></span>
-                      <span className="text-[6px] sm:text-[9px] md:text-[11px] font-medium text-blue-600">
-                        24/7
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          {/* Floating Card 2 */}
+          <div className="absolute right-0 top-0 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
+            <p className="text-xs font-medium uppercase tracking-wide text-black/40">
+              Nearby Services
+            </p>
+
+            <div className="mt-3">
+              <h4 className="text-sm font-semibold text-black">
+                Aqsa Diagnostic Lab
+              </h4>
+
+              <p className="mt-1 text-sm text-black/55">
+                Open now • 0.8 km away
+              </p>
             </div>
           </div>
         </div>
-      </motion.div>
-    </div>
+      </div>
+
+      {/* Background Glow */}
+      <div className="absolute left-[-10%] top-[-10%] h-[400px] w-[400px] rounded-full bg-[#9084e5]/10 blur-3xl" />
+
+      <div className="absolute bottom-[-10%] right-[-10%] h-[400px] w-[400px] rounded-full bg-[#9084e5]/10 blur-3xl" />
+    </section>
   );
 }

@@ -1,14 +1,16 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const dreamt = localFont({
   src: [
-    { path: "/fonts/dreamt_thin.woff2", weight: "100", style: "normal" },
-    { path: "/fonts/dreamt_regular.woff2", weight: "300", style: "normal" },
+    { path: "/fonts/dreamt_thin.woff2", weight: "100", style: "thing" },
+    { path: "/fonts/dreamt_regular.woff2", weight: "300", style: "regular" },
     { path: "/fonts/dreamt_nurmal.woff2", weight: "400", style: "normal" },
-    { path: "/fonts/dreamt_md.woff2", weight: "500", style: "normal" },
-    { path: "/fonts/dreamt_bold.woff2", weight: "700", style: "normal" },
+    { path: "/fonts/dreamt_md.woff2", weight: "500", style: "meadum" },
+    { path: "/fonts/dreamt_bold.woff2", weight: "700", style: "bold" },
   ],
   display: "swap",
 });
@@ -73,7 +75,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${dreamt.className} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <Header />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
