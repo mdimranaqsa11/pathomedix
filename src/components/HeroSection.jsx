@@ -9,6 +9,7 @@ import {
   ScanLine,
   Sparkles,
 } from "lucide-react";
+import MobileBannerCarousel from "./MobileBannerCarousel";
 
 const services = [
   {
@@ -43,18 +44,20 @@ export default function HeroSection() {
       <div className="mx-auto grid  max-w-7xl grid-cols-1 gap-14 px-5 pb-14 pt-10 lg:grid-cols-[1.05fr_0.95fr] lg:px-8 lg:pt-16">
         {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center">
+          <MobileBannerCarousel />
+
           {/* Badge */}
-          <div className="mb-6 inline-flex w-fit items-center rounded-full border border-[#9084e5]/15 bg-[#9084e5]/10 px-4 py-2 text-xs font-medium text-[#9084e5]">
+          <div className="mb-6 hidden  md:inline-flex w-fit items-center rounded-full border border-[#9084e5]/15 bg-[#9084e5]/10 px-4 py-2 text-xs font-medium text-[#9084e5]">
             Healthcare Services Platform
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-2xl text-2xl sm:text-5xl font-medium leading-[1.05] tracking-tight text-black">
+          <h1 className="max-w-2xl hidden sm:block text-2xl sm:text-5xl font-medium leading-[1.05] tracking-tight text-black">
             Healthcare services <br /> at your doorstep
           </h1>
 
           {/* Description */}
-          <p className="mt-6 max-w-xl sm:text-base text-sm  text-black/60">
+          <p className="mt-6 max-w-xl hidden sm:block sm:text-base text-sm  text-black/60">
             Find trusted medical stores, diagnostic labs, physiotherapy,
             prescription scanning, and home healthcare services all in one
             modern platform.
