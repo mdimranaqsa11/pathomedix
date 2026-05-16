@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import AdvertisementModal from "@/components/AdvertisementModal";
 
 const dreamt = localFont({
   src: [
@@ -78,6 +79,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
+        <AdvertisementModal />
         <Footer />
       </body>
     </html>
