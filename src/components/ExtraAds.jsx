@@ -17,7 +17,7 @@ export default function ExtraAds() {
         {/* Right Banner */}
         <div className="group overflow-hidden rounded-lg sm:rounded-2xl lg:rounded-[2.5rem] bg-[#f6f4ff] shadow-[0_15px_40px_rgba(0,0,0,0.04)] sm:shadow-[0_20px_60px_rgba(0,0,0,0.05)] lg:shadow-[0_25px_80px_rgba(0,0,0,0.06)]">
           <img
-            src="/images/lab.png"
+            src="/images/lab.jpeg"
             alt="Diagnostic Lab"
             className="h-[200px] sm:h-[300px] lg:h-full w-full object-cover transition duration-700 group-hover:scale-[1.03]"
           />

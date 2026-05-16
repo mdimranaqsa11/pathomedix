@@ -12,6 +12,10 @@ const banners = [
     id: 2,
     image: "/images/aqsaD.jpeg",
   },
+  {
+    id: 3,
+    image: "/images/phy3.jpeg",
+  },
 ];
 
 export default function MobileBannerCarousel() {
