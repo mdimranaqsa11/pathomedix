@@ -6,14 +6,18 @@ import Image from "next/image";
 const banners = [
   {
     id: 1,
-    image: "/images/banr2P.jpeg",
+    image: "/images/surePath.jpeg",
   },
   {
     id: 2,
-    image: "/images/aqsaD.jpeg",
+    image: "/images/banr2P.jpeg",
   },
   {
     id: 3,
+    image: "/images/aqsaD.jpeg",
+  },
+  {
+    id: 4,
     image: "/images/phy3.jpeg",
   },
 ];

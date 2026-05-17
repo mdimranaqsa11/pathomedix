@@ -1,5 +1,6 @@
 import AppIntroBanner from "@/components/AppIntroBanner";
 import CuppingBannerSection from "@/components/CuppingBannerSection";
+import DoctersCarocel from "@/components/DoctersCarocel";
 import ExtraAds from "@/components/ExtraAds";
 import FamilyCarePackages from "@/components/FamilyCarePackages";
 import HeroSection from "@/components/HeroSection";
@@ -13,6 +14,7 @@ export default function Home() {
   return (
     <>
       <HeroSection />
+      <DoctersCarocel />
       <FamilyCarePackages />
       <VideoShowcase />
       <PopularServices />
