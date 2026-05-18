@@ -62,6 +62,34 @@ const Doctors = [
       "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
     image: "/images/dr-sajid-rana.png",
   },
+  {
+    id: 5,
+    name: "Dr. Almas Khan",
+    specialization: "General & Laproscopic Surgeon",
+    qualification: "MBBS, MS (General Surgery)",
+    rating: "4.9",
+    reviews: "210",
+    experience: "8+ Years Experience",
+    availability: "Available for Consultation",
+    consultationFee: "₹500",
+    description:
+      "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
+    image: "/images/dr-almas-khan.png",
+  },
+  {
+    id: 6,
+    name: "Dr. Asif Hussain",
+    specialization: "Consultant Orthopaedic & Sports Physiotherapist",
+    qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
+    rating: "4.9",
+    reviews: "186",
+    experience: "7+ Years Experience",
+    availability: "Available for Consultation",
+    consultationFee: "₹600",
+    description:
+      "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
+    image: "/images/dr-asif-hussain.png",
+  },
 ];
 
 function DoctersCarocel() {
