@@ -18,16 +18,16 @@ const services = [
       "https://img.magnific.com/premium-photo/smart-skilled-cosmetologist-using-modern-device-while-doing-hydrafacial-procedure_259150-9197.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_incoming&w=740&q=80",
   },
   {
-    title: "Laser Hair Removal",
+    title: "Melasma Pigmentation",
     rating: "4.8",
     reviews: "7K",
     price: "₹999",
     originalPrice: "₹1699",
-    subtitle: "Smooth and long-lasting hair reduction",
+    subtitle: "Even skin tone & dark spot reduction",
     description:
-      "Advanced laser technology for smooth, long-lasting hair reduction. Pain-free and effective for all skin tones.",
+      "Advanced skin treatment designed to reduce melasma, dark patches, and uneven skin tone. Helps brighten skin, improve texture, and restore a clear, radiant complexion safely for all skin types.",
     image:
-      "https://img.magnific.com/free-photo/active-healthy-sportswoman-smiling-laughing-wiping-sweat-workout-doing-exercises-gym-standing-white-background_176420-49175.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_incoming&w=740&q=80",
+      "https://img.magnific.com/premium-photo/dark-spots-hyperpigmentation-melasma-chloasma-concept-skin-lightening_979672-581.jpg",
   },
   {
     title: "Acne Treatment",

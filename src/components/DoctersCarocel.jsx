@@ -71,13 +71,42 @@ const Doctors = [
     reviews: "210",
     experience: "8+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹500",
+    consultationFee: "₹650",
     description:
       "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
     image: "/images/dr-almas-khan.png",
   },
   {
-    id: 6,
+    id: 7,
+    name: "Dr Mazid Khan Chauhan",
+    specialization: "Orthopaedic Specialist",
+    qualification: "MBBS, MS (Orthopaedics)",
+    rating: "4.8",
+    reviews: "154",
+    experience: "11+ Years Experience",
+    availability: "By appointment only",
+    consultationFee: "₹650",
+    description:
+      "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
+    image: "/images/dr-mazid-khan-chauhan.png",
+  },
+
+  {
+    id: 7,
+    name: "Dr Ali Salman",
+    specialization: "Pediatrician",
+    qualification: "MBBS, FIP",
+    rating: "4.9",
+    reviews: "201",
+    experience: "10+ Years Experience",
+    availability: "Available for Consultation",
+    consultationFee: "₹500",
+    description:
+      "Child healthcare specialist providing expert consultation for newborn care, child growth, fever, infections, vaccinations, and pediatric wellness.",
+    image: "/images/dr-ali-salman-change.png",
+  },
+  {
+    id: 8,
     name: "Dr. Asif Hussain",
     specialization: "Consultant Orthopaedic & Sports Physiotherapist",
     qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
@@ -85,7 +114,7 @@ const Doctors = [
     reviews: "186",
     experience: "7+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹600",
+    consultationFee: "₹400",
     description:
       "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
     image: "/images/dr-asif-hussain.png",
