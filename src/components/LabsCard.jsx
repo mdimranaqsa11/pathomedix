@@ -5,144 +5,55 @@ import { ArrowRight, X, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
-const Doctors = [
+const Labs = [
   {
     id: 1,
-    name: "Dr. Pravin Gupta",
-    specialization: "Interventional Cardiologist",
-    qualification: "MBBS, MD, DM (Cardiology)",
-    rating: "4.8",
-    reviews: "280",
+    name: "Surepath Lab",
+    specialization: "Advanced Pathology & Diagnostic Laboratory",
+    qualification: "NABL Certified Laboratory",
+    rating: "4.9",
+    reviews: "420",
     experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹700",
+    availability: "Home Sample Collection Available",
+    testFee: "Starts from ₹299",
     description:
-      "Trusted cardiologist specializing in angiography, angioplasty, heart blockage, and preventive cardiac care.",
-    image: "/images/dr-pravin-gupta.png",
+      "Trusted pathology laboratory providing accurate blood tests, full body checkups, and advanced diagnostic services with fast and reliable reports.",
+    services: [
+      "Blood Test",
+      "Full Body Checkup",
+      "Thyroid Profile",
+      "Diabetes Test",
+      "CBC Test",
+      "Home Sample Collection",
+    ],
+    image: "/images/surepath-lab.png",
   },
+
   {
     id: 2,
-    name: "Dr. Prerit Agarwal",
-    specialization: "Senior Cardiac Surgeon",
-    qualification: "MBBS, MS, M.Ch (CTVS)",
-    rating: "4.9",
+    name: "Abhay Sanjivani Diagnostics",
+    specialization: "Diagnostic & Pathology Laboratory",
+    qualification: "NABL Certified Laboratory",
+    rating: "4.8",
     reviews: "310",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹900",
+    experience: "10+ Years Experience",
+    availability: "Open Daily for Testing",
+    testFee: "Starts from ₹249",
     description:
-      "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
-    image: "/images/dr-prerit-agarwal.png",
-  },
-  {
-    id: 3,
-    name: "Dr Aabid Hassan",
-    specialization: "Laparoscopic & Robotic Gastrointestinal Surgeon",
-    qualification: "MBBS, MS, MCh",
-    rating: "4.9",
-    reviews: "185",
-    experience: "12+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹700",
-    description:
-      "Experienced gastrointestinal and hepatobiliary surgeon specializing in advanced laparoscopic and robotic surgeries with patient-focused surgical care.",
-    expertise: [
-      "Laparoscopic Surgery",
-      "Robotic Surgery",
-      "Gastrointestinal Surgery",
-      "Hepatobiliary Surgery",
-      "Pancreatic Surgery",
-      "Advanced Surgical Care",
+      "Modern diagnostic laboratory offering reliable pathology testing, preventive health packages, and quick digital reports with professional care.",
+    services: [
+      "Vitamin Test",
+      "Liver Function Test",
+      "Kidney Function Test",
+      "Lipid Profile",
+      "Urine Test",
+      "Health Packages",
     ],
-    image: "/images/dr-aabid-hassan.png",
-  },
-  {
-    id: 4,
-    name: "Dr. Anu Aggarwal",
-    specialization: "Chest & Lung Specialist",
-    qualification: "MBBS, DTCD, DNB Respiratory Medicine",
-    rating: "4.9",
-    reviews: "245",
-    experience: "10+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹500",
-    description:
-      "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
-    image: "/images/dr-anu-aggarwal.png",
-  },
-  {
-    id: 5,
-    name: "Dr. Sajid Rana",
-    specialization: "General Physician",
-    qualification: "MBBS, MD",
-    rating: "4.8",
-    reviews: "198",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹400",
-    description:
-      "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
-    image: "/images/dr-sajid-rana.png",
-  },
-  {
-    id: 6,
-    name: "Dr. Almas Khan",
-    specialization: "General & Laproscopic Surgeon",
-    qualification: "MBBS, MS (General Surgery)",
-    rating: "4.9",
-    reviews: "210",
-    experience: "8+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹650",
-    description:
-      "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
-    image: "/images/dr-almas-khan.png",
-  },
-  {
-    id: 7,
-    name: "Dr Mazid Khan Chauhan",
-    specialization: "Orthopaedic Specialist",
-    qualification: "MBBS, MS (Orthopaedics)",
-    rating: "4.8",
-    reviews: "154",
-    experience: "11+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹650",
-    description:
-      "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
-    image: "/images/dr-mazid-khan-chauhan.png",
-  },
-  {
-    id: 8,
-    name: "Dr Ali Salman",
-    specialization: "Pediatrician",
-    qualification: "MBBS, FIP",
-    rating: "4.9",
-    reviews: "201",
-    experience: "10+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹500",
-    description:
-      "Child healthcare specialist providing expert consultation for newborn care, child growth, fever, infections, vaccinations, and pediatric wellness.",
-    image: "/images/dr-ali-salman-change.png",
-  },
-  {
-    id: 9,
-    name: "Dr. Asif Hussain",
-    specialization: "Consultant Orthopaedic & Sports Physiotherapist",
-    qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
-    rating: "4.9",
-    reviews: "186",
-    experience: "7+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹400",
-    description:
-      "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
-    image: "/images/dr-asif-hussain.png",
+    image: "/images/abhay-sanjivani-diagnostics.png",
   },
 ];
 
-function DoctersCarocel() {
+function LabsCard() {
   const [selectedService, setSelectedService] = useState(null);
 
   const scrollRef = useRef(null);
@@ -164,7 +75,7 @@ function DoctersCarocel() {
           {/* Header */}
           <div className="flex items-center justify-between mb-4 sm:mb-6">
             <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#1a2b6b]">
-              Most Booked Doctors
+              Most Booked Labs
             </h2>
             <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
               <ArrowRight size={14} />
@@ -176,7 +87,7 @@ function DoctersCarocel() {
             ref={scrollRef}
             className="flex gap-3 sm:gap-4 lg:gap-5 overflow-x-auto scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
-            {Doctors.map((pkg) => (
+            {Labs.map((pkg) => (
               <div
                 onClick={() => setSelectedService(pkg)}
                 key={pkg.id}
@@ -380,4 +291,4 @@ function DoctersCarocel() {
   );
 }
 
-export default DoctersCarocel;
+export default LabsCard;

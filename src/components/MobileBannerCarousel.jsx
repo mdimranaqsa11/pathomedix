@@ -14,7 +14,7 @@ const banners = [
   },
   {
     id: 3,
-    image: "/images/aqsaD.jpeg",
+    image: "/images/abhay-sanjivani-diagnostics.png",
   },
   {
     id: 4,

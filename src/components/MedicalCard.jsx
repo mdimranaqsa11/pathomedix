@@ -5,7 +5,7 @@ import { ArrowRight, X, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
 
-const Doctors = [
+const Medicals = [
   {
     id: 1,
     name: "Dr. Pravin Gupta",
@@ -36,28 +36,6 @@ const Doctors = [
   },
   {
     id: 3,
-    name: "Dr Aabid Hassan",
-    specialization: "Laparoscopic & Robotic Gastrointestinal Surgeon",
-    qualification: "MBBS, MS, MCh",
-    rating: "4.9",
-    reviews: "185",
-    experience: "12+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹700",
-    description:
-      "Experienced gastrointestinal and hepatobiliary surgeon specializing in advanced laparoscopic and robotic surgeries with patient-focused surgical care.",
-    expertise: [
-      "Laparoscopic Surgery",
-      "Robotic Surgery",
-      "Gastrointestinal Surgery",
-      "Hepatobiliary Surgery",
-      "Pancreatic Surgery",
-      "Advanced Surgical Care",
-    ],
-    image: "/images/dr-aabid-hassan.png",
-  },
-  {
-    id: 4,
     name: "Dr. Anu Aggarwal",
     specialization: "Chest & Lung Specialist",
     qualification: "MBBS, DTCD, DNB Respiratory Medicine",
@@ -71,7 +49,7 @@ const Doctors = [
     image: "/images/dr-anu-aggarwal.png",
   },
   {
-    id: 5,
+    id: 4,
     name: "Dr. Sajid Rana",
     specialization: "General Physician",
     qualification: "MBBS, MD",
@@ -85,7 +63,7 @@ const Doctors = [
     image: "/images/dr-sajid-rana.png",
   },
   {
-    id: 6,
+    id: 5,
     name: "Dr. Almas Khan",
     specialization: "General & Laproscopic Surgeon",
     qualification: "MBBS, MS (General Surgery)",
@@ -112,8 +90,9 @@ const Doctors = [
       "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
     image: "/images/dr-mazid-khan-chauhan.png",
   },
+
   {
-    id: 8,
+    id: 7,
     name: "Dr Ali Salman",
     specialization: "Pediatrician",
     qualification: "MBBS, FIP",
@@ -127,7 +106,7 @@ const Doctors = [
     image: "/images/dr-ali-salman-change.png",
   },
   {
-    id: 9,
+    id: 8,
     name: "Dr. Asif Hussain",
     specialization: "Consultant Orthopaedic & Sports Physiotherapist",
     qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
@@ -142,7 +121,7 @@ const Doctors = [
   },
 ];
 
-function DoctersCarocel() {
+function MedicalCard() {
   const [selectedService, setSelectedService] = useState(null);
 
   const scrollRef = useRef(null);
@@ -164,7 +143,7 @@ function DoctersCarocel() {
           {/* Header */}
           <div className="flex items-center justify-between mb-4 sm:mb-6">
             <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#1a2b6b]">
-              Most Booked Doctors
+              Most Booked Medical
             </h2>
             <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
               <ArrowRight size={14} />
@@ -380,4 +359,4 @@ function DoctersCarocel() {
   );
 }
 
-export default DoctersCarocel;
+export default MedicalCard;
