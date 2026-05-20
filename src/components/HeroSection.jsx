@@ -33,7 +33,7 @@ const services = [
     icon: Sparkles,
   },
   {
-    title: "Home Healthcare",
+    title: "Online Consultation",
     icon: HeartPulse,
   },
 ];

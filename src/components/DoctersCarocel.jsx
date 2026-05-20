@@ -4,143 +4,7 @@ import { useRef } from "react";
 import { ArrowRight, X, Phone, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
-
-const Doctors = [
-  {
-    id: 1,
-    name: "Dr. Pravin Gupta",
-    specialization: "Interventional Cardiologist",
-    qualification: "MBBS, MD, DM (Cardiology)",
-    rating: "4.8",
-    reviews: "280",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹700",
-    description:
-      "Trusted cardiologist specializing in angiography, angioplasty, heart blockage, and preventive cardiac care.",
-    image: "/images/dr-pravin-gupta.png",
-  },
-  {
-    id: 2,
-    name: "Dr. Prerit Agarwal",
-    specialization: "Senior Cardiac Surgeon",
-    qualification: "MBBS, MS, M.Ch (CTVS)",
-    rating: "4.9",
-    reviews: "310",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹900",
-    description:
-      "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
-    image: "/images/dr-prerit-agarwal.png",
-  },
-  {
-    id: 3,
-    name: "Dr Aabid Hassan",
-    specialization: "Laparoscopic & Robotic Gastrointestinal Surgeon",
-    qualification: "MBBS, MS, MCh",
-    rating: "4.9",
-    reviews: "185",
-    experience: "12+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹700",
-    description:
-      "Experienced gastrointestinal and hepatobiliary surgeon specializing in advanced laparoscopic and robotic surgeries with patient-focused surgical care.",
-    expertise: [
-      "Laparoscopic Surgery",
-      "Robotic Surgery",
-      "Gastrointestinal Surgery",
-      "Hepatobiliary Surgery",
-      "Pancreatic Surgery",
-      "Advanced Surgical Care",
-    ],
-    image: "/images/dr-aabid-hassan.png",
-  },
-  {
-    id: 4,
-    name: "Dr. Anu Aggarwal",
-    specialization: "Chest & Lung Specialist",
-    qualification: "MBBS, DTCD, DNB Respiratory Medicine",
-    rating: "4.9",
-    reviews: "245",
-    experience: "10+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹500",
-    description:
-      "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
-    image: "/images/dr-anu-aggarwal.png",
-  },
-  {
-    id: 5,
-    name: "Dr. Sajid Rana",
-    specialization: "General Physician",
-    qualification: "MBBS, MD",
-    rating: "4.8",
-    reviews: "198",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹400",
-    description:
-      "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
-    image: "/images/dr-sajid-rana.png",
-  },
-  {
-    id: 6,
-    name: "Dr. Almas Khan",
-    specialization: "General & Laproscopic Surgeon",
-    qualification: "MBBS, MS (General Surgery)",
-    rating: "4.9",
-    reviews: "210",
-    experience: "8+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹650",
-    description:
-      "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
-    image: "/images/dr-almas-khan.png",
-  },
-  {
-    id: 7,
-    name: "Dr Mazid Khan Chauhan",
-    specialization: "Orthopaedic Specialist",
-    qualification: "MBBS, MS (Orthopaedics)",
-    rating: "4.8",
-    reviews: "154",
-    experience: "11+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹650",
-    description:
-      "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
-    image: "/images/dr-mazid-khan-chauhan.png",
-  },
-  {
-    id: 8,
-    name: "Dr Ali Salman",
-    specialization: "Pediatrician",
-    qualification: "MBBS, FIP",
-    rating: "4.9",
-    reviews: "201",
-    experience: "10+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹500",
-    description:
-      "Child healthcare specialist providing expert consultation for newborn care, child growth, fever, infections, vaccinations, and pediatric wellness.",
-    image: "/images/dr-ali-salman-change.png",
-  },
-  {
-    id: 9,
-    name: "Dr. Asif Hussain",
-    specialization: "Consultant Orthopaedic & Sports Physiotherapist",
-    qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
-    rating: "4.9",
-    reviews: "186",
-    experience: "7+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹400",
-    description:
-      "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
-    image: "/images/dr-asif-hussain.png",
-  },
-];
+import { DoctorsData } from "@/data/data";
 
 function DoctersCarocel() {
   const [selectedService, setSelectedService] = useState(null);
@@ -176,7 +40,7 @@ function DoctersCarocel() {
             ref={scrollRef}
             className="flex gap-3 sm:gap-4 lg:gap-5 overflow-x-auto scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
-            {Doctors.map((pkg) => (
+            {DoctorsData.map((pkg) => (
               <div
                 onClick={() => setSelectedService(pkg)}
                 key={pkg.id}
@@ -272,7 +136,15 @@ function DoctersCarocel() {
                     {selectedService.experience}
                   </h4>
                 </div>
+                <div className="rounded-2xl bg-[#f8f8fc] p-4">
+                  <p className="text-xs text-black/50">
+                    Online Appointment Time
+                  </p>
 
+                  <h4 className="mt-1 text-sm font-semibold text-black">
+                    {selectedService.timeslot}
+                  </h4>
+                </div>
                 <div className="rounded-2xl bg-[#f8f8fc] p-4">
                   <p className="text-xs text-black/50">Availability</p>
 
