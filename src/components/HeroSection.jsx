@@ -111,7 +111,7 @@ export default function HeroSection() {
               {/* Top */}
               <div className="overflow-hidden rounded-[2.5rem]">
                 <img
-                  src="/images/medical-h.jpeg"
+                  src="https://img.magnific.com/premium-photo/doctor-attentively-listens-patient-takes-notes-explains-diagnoses-treatment_1141877-303.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80"
                   alt="Physiotherapy"
                   className="h-[340px] w-full object-cover transition duration-700 hover:scale-[1.04]"
                 />
@@ -120,7 +120,7 @@ export default function HeroSection() {
               {/* Bottom */}
               <div className="overflow-hidden rounded-[2.5rem]">
                 <img
-                  src="https://img.magnific.com/premium-vector/cupping-therapy-illustration-design_327364-663.jpg?uid=R219158598&ga=GA1.1.607830471.1777706050&semt=ais_hybrid&w=740&q=80"
+                  src="https://img.magnific.com/free-photo/friendly-hospital-phlebotomist-collecting-blood-sample-from-patient-lab-preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room_657921-879.jpg?t=st=1778607457~exp=1778611057~hmac=2f9edc6de5f104d5ec1906754de79f01a58d8bebe58bc5a0fbb1f2051af5bb94&w=740"
                   alt="Medical Service"
                   className="h-[260px] w-full object-cover transition duration-700 hover:scale-[1.04]"
                 />
@@ -132,7 +132,7 @@ export default function HeroSection() {
               {/* Top */}
               <div className="overflow-hidden rounded-[2.5rem]">
                 <img
-                  src="https://img.magnific.com/free-photo/friendly-hospital-phlebotomist-collecting-blood-sample-from-patient-lab-preparation-blood-test-by-female-doctor-medical-uniform-table-white-bright-room_657921-879.jpg?t=st=1778607457~exp=1778611057~hmac=2f9edc6de5f104d5ec1906754de79f01a58d8bebe58bc5a0fbb1f2051af5bb94&w=740"
+                  src="/images/medical-h.jpeg"
                   alt="Blood Test"
                   className="h-[260px] w-full object-cover transition duration-700 hover:scale-[1.04]"
                 />
@@ -150,7 +150,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 1 */}
-          <div className="absolute bottom-8 left-0 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
+          <div className="absolute -bottom-5 left-0 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
             <p className="text-xs font-medium uppercase tracking-wide text-black/40">
               Prescription Scan
             </p>
@@ -167,7 +167,7 @@ export default function HeroSection() {
           </div>
 
           {/* Floating Card 2 */}
-          <div className="absolute right-0 top-0 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
+          <div className="absolute -right-5 -top-14 hidden rounded-3xl border border-black/5 bg-white/90 p-5 shadow-[0_20px_60px_rgba(0,0,0,0.08)] backdrop-blur-xl lg:block">
             <p className="text-xs font-medium uppercase tracking-wide text-black/40">
               Nearby Services
             </p>

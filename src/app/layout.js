@@ -1,9 +1,8 @@
-import { Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import AdvertisementModal from "@/components/AdvertisementModal";
+import HealthPriorityModal from "@/components/HealthPriorityModal";
 
 const dreamt = localFont({
   src: [
@@ -16,40 +15,81 @@ const dreamt = localFont({
   display: "swap",
 });
 
+// app/layout.js or app/layout.tsx
+
 export const metadata = {
+  manifest: "/manifest.json",
   metadataBase: new URL("https://pathomedix.com"),
 
   title: {
-    default: "PathoMedix Find Nearby Medical Stores & Labs",
+    default: "PathoMedix - Find Nearby Doctors, Labs & Medical Stores",
     template: "%s | PathoMedix",
   },
 
   description:
-    "PathoMedix helps you find nearby medical stores and diagnostic labs instantly. Upload prescriptions, search medicines, and connect with trusted healthcare providers near you.",
+    "PathoMedix helps patients find nearby doctors, diagnostic labs, medical stores, and healthcare services. Book appointments, upload prescriptions, order medicines, and schedule home sample collection easily.",
+
+  applicationName: "PathoMedix",
 
   keywords: [
-    "medical store near me",
-    "lab test near me",
-    "diagnostic lab near me",
-    "medicine search app",
-    "prescription scanner",
     "PathoMedix",
+    "doctor appointment booking",
+    "nearby doctors",
+    "medical store near me",
+    "diagnostic lab near me",
+    "blood test near me",
+    "online doctor consultation",
+    "healthcare app india",
+    "medicine delivery",
+    "prescription upload",
+    "home sample collection",
+    "pathology lab near me",
+    "physiotherapist near me",
+    "skin specialist",
+    "cardiologist near me",
   ],
 
+  authors: [
+    {
+      name: "PathoMedix",
+      url: "https://pathomedix.com",
+    },
+  ],
+
+  creator: "PathoMedix",
+  publisher: "PathoMedix",
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  manifest: "/manifest.json",
+
   openGraph: {
-    title: "PathoMedix - Nearby Medical Stores & Labs",
+    title: "PathoMedix - Nearby Doctors, Labs & Medical Stores",
     description:
-      "Search medicines, upload prescriptions, and find nearby labs with PathoMedix.",
+      "Book doctor appointments, find nearby labs and medical stores, upload prescriptions, and access trusted healthcare services with PathoMedix.",
+
     url: "https://pathomedix.com",
     siteName: "PathoMedix",
+
     images: [
       {
-        url: "https://pathomedix.com/og-image.png", // full URL important
+        url: "https://pathomedix.com/og-image.png",
         width: 1200,
         height: 630,
-        alt: "PathoMedix Healthcare App",
+        alt: "PathoMedix Healthcare Platform",
       },
     ],
+
     locale: "en_IN",
     type: "website",
   },
@@ -58,7 +98,8 @@ export const metadata = {
     card: "summary_large_image",
     title: "PathoMedix - Healthcare Made Easy",
     description:
-      "Find medicines and labs near you. Upload prescriptions and connect instantly.",
+      "Find nearby doctors, labs, and medicines. Book appointments and healthcare services instantly.",
+
     images: ["https://pathomedix.com/og-image.png"],
   },
 
@@ -68,9 +109,15 @@ export const metadata = {
 
   icons: {
     icon: "/favicon.ico",
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 
   category: "healthcare",
+
+  verification: {
+    google: "YOUR_GOOGLE_SITE_VERIFICATION_CODE",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -79,7 +126,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <Header />
         {children}
-        <AdvertisementModal />
+        <HealthPriorityModal />
         <Footer />
       </body>
     </html>

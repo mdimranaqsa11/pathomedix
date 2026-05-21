@@ -32,7 +32,7 @@ export default function Header() {
               PathoMedix
             </span>
             <span className="text-[0.65rem] sm:text-xs text-black/45 truncate">
-              Healthcare Services
+              Medical Search Engine
             </span>
           </div>
         </Link>

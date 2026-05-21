@@ -8,6 +8,7 @@ import LabsCard from "@/components/LabsCard";
 import MedicalCard from "@/components/MedicalCard";
 import PhyServices from "@/components/PhyService";
 import PopularServices from "@/components/PopularServices";
+import Testimonials from "@/components/Testimonials";
 import VideoShowcase from "@/components/VideoShowcase";
 import React from "react";
 
@@ -23,6 +24,7 @@ export default function Home() {
       <PopularServices />
       <PhyServices />
       <CuppingBannerSection />
+      <Testimonials />
       <AppIntroBanner />
       <ExtraAds />
     </>
