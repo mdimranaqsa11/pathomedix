@@ -18,7 +18,7 @@ export default function Home() {
       <HeroSection />
       <DoctersCarocel />
       <LabsCard />
-      {/* <MedicalCard /> */}
+      <MedicalCard />
       <FamilyCarePackages />
       <VideoShowcase />
       <PopularServices />

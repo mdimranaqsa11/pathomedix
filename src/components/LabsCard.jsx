@@ -117,7 +117,7 @@ function LabsCard() {
             {/* Header */}
             <div className="sticky top-0 flex items-center justify-between border-b border-black/5 bg-white px-4 py-4 sm:px-6">
               <h3 className="text-lg font-semibold text-black sm:text-xl">
-                Doctor Details
+                Lab Details
               </h3>
 
               <button
@@ -130,7 +130,7 @@ function LabsCard() {
 
             {/* Content */}
             <div className="flex-1 overflow-y-auto px-4 py-4 sm:px-6">
-              {/* Doctor Image */}
+              {/* Lab Image */}
               <div className="mb-6 overflow-hidden rounded-3xl bg-[#f6f4ff]">
                 <img
                   src={selectedService.image}
@@ -139,14 +139,14 @@ function LabsCard() {
                 />
               </div>
 
-              {/* Doctor Category */}
+              {/* Lab Category */}
               <div className="mb-2">
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#9084e5]">
-                  PathoMedix Doctor
+                  PathoMedix Lab
                 </p>
               </div>
 
-              {/* Doctor Name */}
+              {/* Lab Name */}
               <h2 className="text-2xl font-bold tracking-tight text-black sm:text-3xl">
                 {selectedService.name}
               </h2>
@@ -193,25 +193,10 @@ function LabsCard() {
                 </div>
               </div>
 
-              {/* Consultation Fee */}
-              <div className="mt-6 rounded-3xl bg-[#f8f8fc] p-5">
-                <p className="text-sm text-black/50">Consultation Fee</p>
-
-                <div className="mt-2 flex items-center gap-3">
-                  <span className="text-3xl font-bold text-black">
-                    {selectedService.consultationFee}
-                  </span>
-
-                  <span className="rounded-full bg-[#9084e5]/10 px-3 py-1 text-xs font-medium text-[#9084e5]">
-                    Per Consultation
-                  </span>
-                </div>
-              </div>
-
-              {/* About Doctor */}
+              {/* About Lab */}
               <div className="mt-7">
                 <h4 className="mb-3 text-sm font-semibold text-black">
-                  About Doctor
+                  About Lab
                 </h4>
 
                 <p className="text-sm leading-7 text-black/70">
@@ -222,16 +207,14 @@ function LabsCard() {
               {/* Benefits */}
               <div className="mt-7">
                 <h4 className="mb-4 text-sm font-semibold text-black">
-                  Why Choose This Doctor
+                  Why Choose This Lab
                 </h4>
 
                 <div className="space-y-3">
                   <div className="flex items-center gap-3">
                     <span className="text-[#9084e5]">✓</span>
 
-                    <span className="text-sm text-black/70">
-                      Trusted medical consultation
-                    </span>
+                    <span className="text-sm text-black/70">Trusted Lab</span>
                   </div>
 
                   <div className="flex items-center gap-3">
@@ -246,15 +229,7 @@ function LabsCard() {
                     <span className="text-[#9084e5]">✓</span>
 
                     <span className="text-sm text-black/70">
-                      Personalized treatment guidance
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <span className="text-[#9084e5]">✓</span>
-
-                    <span className="text-sm text-black/70">
-                      Easy appointment booking
+                      Easy booking Lab
                     </span>
                   </div>
                 </div>
@@ -270,7 +245,7 @@ function LabsCard() {
               >
                 <Phone size={18} />
 
-                <span>Call Doctor</span>
+                <span>Call Lab</span>
               </a>
 
               {/* WhatsApp */}

@@ -8,116 +8,33 @@ import Image from "next/image";
 const Medicals = [
   {
     id: 1,
-    name: "Dr. Pravin Gupta",
-    specialization: "Interventional Cardiologist",
-    qualification: "MBBS, MD, DM (Cardiology)",
+    name: "Seema Medical Store",
+    type: "Medical Store",
     rating: "4.8",
-    reviews: "280",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹700",
+    reviews: "180",
+    experience: "8 years customer satisfection",
+    availability: "6AM to 11PM",
+    delivery: "Medicine Delivery Available",
+    consultation: "Prescription Support",
+    address: "Old ghas mandi-Thakurdwara, Dist. Moradabad (UP)",
     description:
-      "Trusted cardiologist specializing in angiography, angioplasty, heart blockage, and preventive cardiac care.",
-    image: "/images/dr-pravin-gupta.png",
+      "Trusted medical store providing genuine medicines, healthcare essentials, and quick prescription support with reliable customer service.",
+    image: "/images/seema-medi.png",
   },
   {
     id: 2,
-    name: "Dr. Prerit Agarwal",
-    specialization: "Senior Cardiac Surgeon",
-    qualification: "MBBS, MS, M.Ch (CTVS)",
+    name: "AAYAT MEDICOSE",
+    type: "Medical Store",
     rating: "4.9",
-    reviews: "310",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹900",
+    reviews: "220",
+    experience: "3 years customer satisfection",
+    availability: "9AM to 11:30PM",
+    delivery: "All Medicines Available",
+    consultation: "Meidcal Prescription Support",
+    address: "Dharmada Chouraha, Mangrol Road, BARAN (Raj)",
     description:
-      "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
-    image: "/images/dr-prerit-agarwal.png",
-  },
-  {
-    id: 3,
-    name: "Dr. Anu Aggarwal",
-    specialization: "Chest & Lung Specialist",
-    qualification: "MBBS, DTCD, DNB Respiratory Medicine",
-    rating: "4.9",
-    reviews: "245",
-    experience: "10+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹500",
-    description:
-      "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
-    image: "/images/dr-anu-aggarwal.png",
-  },
-  {
-    id: 4,
-    name: "Dr. Sajid Rana",
-    specialization: "General Physician",
-    qualification: "MBBS, MD",
-    rating: "4.8",
-    reviews: "198",
-    experience: "12+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹400",
-    description:
-      "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
-    image: "/images/dr-sajid-rana.png",
-  },
-  {
-    id: 5,
-    name: "Dr. Almas Khan",
-    specialization: "General & Laproscopic Surgeon",
-    qualification: "MBBS, MS (General Surgery)",
-    rating: "4.9",
-    reviews: "210",
-    experience: "8+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹650",
-    description:
-      "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
-    image: "/images/dr-almas-khan.png",
-  },
-  {
-    id: 7,
-    name: "Dr Mazid Khan Chauhan",
-    specialization: "Orthopaedic Specialist",
-    qualification: "MBBS, MS (Orthopaedics)",
-    rating: "4.8",
-    reviews: "154",
-    experience: "11+ Years Experience",
-    availability: "By appointment only",
-    consultationFee: "₹650",
-    description:
-      "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
-    image: "/images/dr-mazid-khan-chauhan.png",
-  },
-
-  {
-    id: 7,
-    name: "Dr Ali Salman",
-    specialization: "Pediatrician",
-    qualification: "MBBS, FIP",
-    rating: "4.9",
-    reviews: "201",
-    experience: "10+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹500",
-    description:
-      "Child healthcare specialist providing expert consultation for newborn care, child growth, fever, infections, vaccinations, and pediatric wellness.",
-    image: "/images/dr-ali-salman-change.png",
-  },
-  {
-    id: 8,
-    name: "Dr. Asif Hussain",
-    specialization: "Consultant Orthopaedic & Sports Physiotherapist",
-    qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",
-    rating: "4.9",
-    reviews: "186",
-    experience: "7+ Years Experience",
-    availability: "Available for Consultation",
-    consultationFee: "₹400",
-    description:
-      "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
-    image: "/images/dr-asif-hussain.png",
+      "Reliable medical store offering quality medicines, healthcare products, and fast customer service with trusted prescription assistance.",
+    image: "/images/aayat-medi.png",
   },
 ];
 
@@ -143,7 +60,7 @@ function MedicalCard() {
           {/* Header */}
           <div className="flex items-center justify-between mb-4 sm:mb-6">
             <h2 className="text-lg sm:text-2xl lg:text-3xl font-bold text-[#1a2b6b]">
-              Most Booked Medical
+              Most Booked Medical Store
             </h2>
             <button className="h-7 w-7 sm:h-10 sm:w-10 text-white items-center bg-[#1a2b6b] justify-center rounded-full border border-black/10 transition hover:border-[#9084e5]/20 hover:bg-[#9084e5]/5 flex flex-shrink-0">
               <ArrowRight size={14} />
@@ -155,7 +72,7 @@ function MedicalCard() {
             ref={scrollRef}
             className="flex gap-3 sm:gap-4 lg:gap-5 overflow-x-auto scroll-smooth pb-2 [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
           >
-            {Doctors.map((pkg) => (
+            {Medicals.map((pkg) => (
               <div
                 onClick={() => setSelectedService(pkg)}
                 key={pkg.id}
@@ -185,7 +102,7 @@ function MedicalCard() {
             {/* Header */}
             <div className="sticky top-0 flex items-center justify-between border-b border-black/5 bg-white px-4 py-4 sm:px-6">
               <h3 className="text-lg font-semibold text-black sm:text-xl">
-                Doctor Details
+                Meidcal Details
               </h3>
 
               <button
@@ -198,7 +115,7 @@ function MedicalCard() {
 
             {/* Content */}
             <div className="flex-1 overflow-y-auto px-4 py-4 sm:px-6">
-              {/* Doctor Image */}
+              {/* Meidcal Image */}
               <div className="mb-6 overflow-hidden rounded-3xl bg-[#f6f4ff]">
                 <img
                   src={selectedService.image}
@@ -207,14 +124,14 @@ function MedicalCard() {
                 />
               </div>
 
-              {/* Doctor Category */}
+              {/* Meidcal Category */}
               <div className="mb-2">
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#9084e5]">
-                  PathoMedix Doctor
+                  PathoMedix Meidcal
                 </p>
               </div>
 
-              {/* Doctor Name */}
+              {/* Meidcal Name */}
               <h2 className="text-2xl font-bold tracking-tight text-black sm:text-3xl">
                 {selectedService.name}
               </h2>
@@ -261,25 +178,10 @@ function MedicalCard() {
                 </div>
               </div>
 
-              {/* Consultation Fee */}
-              <div className="mt-6 rounded-3xl bg-[#f8f8fc] p-5">
-                <p className="text-sm text-black/50">Consultation Fee</p>
-
-                <div className="mt-2 flex items-center gap-3">
-                  <span className="text-3xl font-bold text-black">
-                    {selectedService.consultationFee}
-                  </span>
-
-                  <span className="rounded-full bg-[#9084e5]/10 px-3 py-1 text-xs font-medium text-[#9084e5]">
-                    Per Consultation
-                  </span>
-                </div>
-              </div>
-
-              {/* About Doctor */}
+              {/* About Meidcal */}
               <div className="mt-7">
                 <h4 className="mb-3 text-sm font-semibold text-black">
-                  About Doctor
+                  About Medical
                 </h4>
 
                 <p className="text-sm leading-7 text-black/70">
@@ -290,7 +192,7 @@ function MedicalCard() {
               {/* Benefits */}
               <div className="mt-7">
                 <h4 className="mb-4 text-sm font-semibold text-black">
-                  Why Choose This Doctor
+                  Why Choose This Meidcal
                 </h4>
 
                 <div className="space-y-3">
@@ -298,7 +200,7 @@ function MedicalCard() {
                     <span className="text-[#9084e5]">✓</span>
 
                     <span className="text-sm text-black/70">
-                      Trusted medical consultation
+                      Trusted medical medicine
                     </span>
                   </div>
 
@@ -314,15 +216,7 @@ function MedicalCard() {
                     <span className="text-[#9084e5]">✓</span>
 
                     <span className="text-sm text-black/70">
-                      Personalized treatment guidance
-                    </span>
-                  </div>
-
-                  <div className="flex items-center gap-3">
-                    <span className="text-[#9084e5]">✓</span>
-
-                    <span className="text-sm text-black/70">
-                      Easy appointment booking
+                      Easy booking Medicin
                     </span>
                   </div>
                 </div>
@@ -338,7 +232,7 @@ function MedicalCard() {
               >
                 <Phone size={18} />
 
-                <span>Call Doctor</span>
+                <span>Call Meidcal</span>
               </a>
 
               {/* WhatsApp */}
