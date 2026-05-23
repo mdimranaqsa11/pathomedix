@@ -10,12 +10,16 @@ import PhyServices from "@/components/PhyService";
 import PopularServices from "@/components/PopularServices";
 import Testimonials from "@/components/Testimonials";
 import VideoShowcase from "@/components/VideoShowcase";
+import EmergencyButton from "@/components/EmergencyButton";
+
 import React from "react";
+import SpaicelDoc from "@/components/SpaicelDoc";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <SpaicelDoc />
       <DoctersCarocel />
       <LabsCard />
       <MedicalCard />
@@ -27,6 +31,7 @@ export default function Home() {
       <Testimonials />
       <AppIntroBanner />
       <ExtraAds />
+      <EmergencyButton />
     </>
   );
 }

@@ -1,4 +1,4 @@
-export const DoctorsData = [
+export const SpaicelDr = [
   {
     id: 1,
     name: "Dr. Pravin Gupta",
@@ -67,6 +67,9 @@ export const DoctorsData = [
       "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
     image: "/images/dr-anu-aggarwal.png",
   },
+];
+
+export const DoctorsData = [
   {
     id: 5,
     name: "Dr. Sajid Rana",
