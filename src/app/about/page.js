@@ -4,94 +4,117 @@
 export default function AboutUs() {
   const reasons = [
     {
-      title: "Accessibility",
+      title: "Verified Doctors",
       description:
-        "Healthcare services brought directly to your doorstep for maximum convenience and comfort.",
+        "Connect with trusted and experienced doctors from multiple specialities for quality healthcare consultation.",
     },
     {
-      title: "Reliability",
+      title: "Diagnostic Labs",
       description:
-        "Trusted network of certified professionals and verified healthcare facilities across the region.",
+        "Book lab tests and access certified pathology & diagnostic labs with reliable reporting services.",
     },
     {
-      title: "Quality Care",
+      title: "Medical Stores",
       description:
-        "Rigorous quality standards ensuring every service meets international healthcare protocols.",
+        "Find nearby medical stores and get quick access to medicines, healthcare products, and emergency support.",
     },
     {
-      title: "Affordability",
+      title: "Emergency Support",
       description:
-        "Transparent pricing with no hidden charges. Quality healthcare at fair and competitive rates.",
+        "24/7 emergency consultation and direct contact support for urgent healthcare needs through PathoMedix.",
     },
   ];
 
   const coreBeliefs = [
     {
-      title: "Mission",
+      title: "Our Mission",
       description:
-        "To make healthcare accessible, affordable, and convenient for everyone.",
+        "To simplify, Online healthcare access by connecting patients with trusted specialist doctors, NABL labs, and verified medical stores in one platform.",
     },
     {
-      title: "Vision",
+      title: "Our Vision",
       description:
-        "Revolutionizing healthcare delivery through modern technology and patient-centric services.",
+        "Building a smarter healthcare ecosystem where every patient or person gets fast, affordable, and reliable care.",
     },
     {
-      title: "Philosophy",
+      title: "Patient First",
       description:
-        "Healthcare is a right, not a privilege. We believe in empowering individuals with easy access.",
+        "Every feature and service at PathoMedix is designed to improve patient comfort, trust, and convenience.",
     },
     {
-      title: "Values",
+      title: "Trust & Care",
       description:
-        "Trust, transparency, excellence, and compassion guide every decision we make.",
+        "We believe healthcare should be transparent, affordable, accessible, and easily available for everyone.",
     },
   ];
 
   return (
-    <section className="bg-white">
+    <section className="bg-white overflow-hidden">
       {/* Hero Section */}
-      <div className="mx-auto max-w-7xl px-3 sm:px-5 lg:px-8 py-12 sm:py-16 lg:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 sm:py-16 lg:py-24">
         {/* Heading */}
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-center text-black mb-8 sm:mb-12">
-          About Us
-        </h1>
+        <div className="text-center mb-10 sm:mb-14">
+          <span className="inline-flex items-center rounded-full bg-[#7c68eb]/10 px-4 py-1.5 text-sm font-medium text-[#7c68eb]">
+            About PathoMedix
+          </span>
 
-        {/* Introduction */}
-        <div className="max-w-3xl mx-auto mb-12 sm:mb-16 lg:mb-20">
-          <p className="text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-black/70 text-center">
-            PathoMedix reimagines healthcare delivery by connecting patients
-            with trusted diagnostic labs, physiotherapy centers, medical stores,
-            prescription scanning services, and home healthcare
-            professionals—all in one seamless platform. We believe that quality
-            healthcare should be accessible, affordable, and convenient for
-            everyone.
-          </p>
-
-          <p className="text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-black/70 text-center mt-4 sm:mt-6">
-            In today's fast-paced world, why spend hours finding the right
-            healthcare services when you can discover everything you need in one
-            place? PathoMedix is committed to making healthcare accessible at
-            your convenience.
-          </p>
+          <h1 className="mt-5 text-3xl sm:text-4xl lg:text-5xl font-medium tracking-tight text-black">
+            Modern Healthcare,
+            <span className="text-[#7c68eb]"> Better Experience</span>
+          </h1>
         </div>
 
-        {/* Why PathoMedix Section */}
-        <div className="mb-16 sm:mb-20 lg:mb-28">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-black mb-10 sm:mb-12 lg:mb-16">
-            Why PathoMedix?
-          </h2>
+        {/* Intro */}
+        <div className="mx-auto max-w-4xl">
+          <div className="rounded-[30px] border border-[#7c68eb]/10 bg-gradient-to-br from-[#faf9ff] to-[#f4f2ff] p-6 sm:p-8 lg:p-10 shadow-sm">
+            <p className="text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-black/70 text-center">
+              PathoMedix is a modern healthcare platform connecting patients
+              with trusted doctors, pathology labs, diagnostic centers,
+              physiotherapists, and medical stores all in one place.
+            </p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+            <p className="mt-5 text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-black/70 text-center">
+              From doctor consultations and lab tests to nearby medicine stores
+              and emergency healthcare support, PathoMedix helps patients access
+              reliable healthcare services quickly, safely, and conveniently.
+            </p>
+
+            <p className="mt-5 text-sm sm:text-base lg:text-lg leading-7 sm:leading-8 text-black/70 text-center">
+              Our goal is to make healthcare easier for every family by bringing
+              trusted healthcare providers together on a single digital
+              platform.
+            </p>
+          </div>
+        </div>
+
+        {/* Why PathoMedix */}
+        <div className="mt-16 sm:mt-20 lg:mt-28">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black">
+              Why Choose PathoMedix?
+            </h2>
+
+            <p className="mt-3 text-sm sm:text-base text-black/60">
+              Healthcare services designed for convenience, trust, and faster
+              patient care.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {reasons.map((reason, index) => (
               <div
                 key={index}
-                className="border-2 border-[#9084e5]/20 rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 bg-[#9084e5]/5 hover:border-[#9084e5]/40 transition"
+                className="group rounded-[28px] border border-[#7c68eb]/15 bg-white p-6 sm:p-7 transition-all duration-300 hover:-translate-y-1 hover:border-[#7c68eb]/40 hover:shadow-xl hover:shadow-[#7c68eb]/10"
               >
-                <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-black mb-3 sm:mb-4">
+                <div className="mb-5 flex h-14 w-14 items-center justify-center rounded-2xl bg-[#7c68eb]/10 text-[#7c68eb] text-xl font-medium">
+                  0{index + 1}
+                </div>
+
+                <h3 className="text-lg sm:text-xl font-semibold text-black mb-3">
                   {reason.title}
                 </h3>
-                <p className="text-xs sm:text-sm lg:text-base leading-6 text-black/70">
+
+                <p className="text-sm sm:text-base leading-6 text-black/65">
                   {reason.description}
                 </p>
               </div>
@@ -99,22 +122,29 @@ export default function AboutUs() {
           </div>
         </div>
 
-        {/* Core Beliefs Section */}
-        <div>
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-black mb-10 sm:mb-12 lg:mb-16">
-            Our Core Beliefs
-          </h2>
+        {/* Core Beliefs */}
+        <div className="mt-16 sm:mt-20 lg:mt-28">
+          <div className="text-center mb-10 sm:mb-14">
+            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-medium text-black">
+              Our Core Values
+            </h2>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 lg:gap-6">
+            <p className="mt-3 text-sm sm:text-base text-black/60">
+              The foundation behind every healthcare experience we provide.
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-5 lg:gap-6">
             {coreBeliefs.map((belief, index) => (
               <div
                 key={index}
-                className="border-2 border-[#9084e5]/20 rounded-2xl sm:rounded-3xl p-5 sm:p-6 lg:p-7 bg-white hover:border-[#9084e5]/40 transition"
+                className="rounded-[28px] border border-[#7c68eb]/15 bg-gradient-to-br from-white to-[#faf9ff] p-6 sm:p-8 transition-all duration-300 hover:border-[#7c68eb]/35 hover:shadow-lg"
               >
-                <h3 className="text-base sm:text-lg lg:text-xl font-semibold text-black mb-3 sm:mb-4">
+                <h3 className="text-xl sm:text-2xl font-semibold text-[#7c68eb] mb-4">
                   {belief.title}
                 </h3>
-                <p className="text-xs sm:text-sm lg:text-base leading-6 text-black/70">
+
+                <p className="text-sm sm:text-base leading-7 text-black/70">
                   {belief.description}
                 </p>
               </div>
@@ -123,23 +153,29 @@ export default function AboutUs() {
         </div>
       </div>
 
-      {/* CTA Section */}
-      <div className="bg-gradient-to-r from-[#9084e5]/10 to-[#9084e5]/5 py-12 sm:py-16 lg:py-20 px-3 sm:px-5 lg:px-8">
-        <div className="mx-auto max-w-3xl text-center">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-black mb-4 sm:mb-6">
-            Ready to experience modern healthcare?
+      {/* CTA */}
+      <div className="relative overflow-hidden bg-gradient-to-r from-[#7c68eb] via-[#8b77f1] to-[#9f91ff] py-14 sm:py-16 lg:py-20">
+        {/* Glow */}
+        <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+        <div className="absolute -right-20 bottom-0 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+
+        <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-medium text-white leading-tight">
+            Your Health Our First Priority
           </h2>
-          <p className="text-sm sm:text-base lg:text-lg text-black/70 mb-8 sm:mb-10">
-            Join thousands of patients who trust PathoMedix for their healthcare
-            needs.
+
+          <p className="mt-5 text-sm sm:text-base lg:text-lg text-white/85 leading-7 max-w-2xl mx-auto">
+            Discover trusted doctors, certified labs, nearby medical stores, and
+            healthcare services with PathoMedix.
           </p>
+
           <a
             href="/services"
-            className="inline-flex items-center gap-2 rounded-full bg-[#9084e5] px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base font-semibold text-white transition hover:scale-[1.02] shadow-[0_10px_30px_rgba(144,132,229,0.35)]"
+            className="mt-8 inline-flex items-center gap-2 rounded-full bg-white px-7 sm:px-9 py-3.5 sm:py-4 text-sm sm:text-base font-semibold text-[#7c68eb] transition-all duration-300 hover:scale-[1.03] shadow-2xl"
           >
             Explore Services
             <svg
-              className="w-4 h-4 sm:w-5 sm:h-5"
+              className="h-5 w-5"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
