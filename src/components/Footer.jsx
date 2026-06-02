@@ -152,7 +152,7 @@ export default function Footer() {
             <div className="mt-4 sm:mt-8 flex items-center gap-2 sm:gap-3">
               {/* Instagram */}
               <a
-                href="#"
+                href="https://www.instagram.com/pathomedixofficial?igsh=cnp1dHNhcHpkdTVj&utm_source=qr"
                 className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl sm:rounded-2xl border border-black/10 bg-white transition hover:border-[#9084e5]/20 hover:bg-[#9084e5] group flex-shrink-0"
               >
                 <svg
@@ -167,7 +167,7 @@ export default function Footer() {
 
               {/* Facebook */}
               <a
-                href="#"
+                href="https://www.facebook.com/share/1DrpE2ELw9/?mibextid=wwXIfr"
                 className="flex h-10 w-10 sm:h-11 sm:w-11 items-center justify-center rounded-xl sm:rounded-2xl border border-black/10 bg-white transition hover:border-[#9084e5]/20 hover:bg-[#9084e5] group flex-shrink-0"
               >
                 <svg

@@ -24,7 +24,7 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹900",
+    consultationFee: "₹800",
     description:
       "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
     image: "/images/dr-prerit-agarwal.png",
@@ -62,7 +62,7 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "10+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹500",
+    consultationFee: "₹600",
     description:
       "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
     image: "/images/dr-anu-aggarwal.png",
@@ -80,7 +80,7 @@ export const DoctorsData = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹400",
+    consultationFee: "₹500",
     description:
       "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
     image: "/images/dr-sajid-rana.png",
@@ -124,7 +124,7 @@ export const DoctorsData = [
     timeslot: "5pm to 11pm",
     experience: "8+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹650",
+    consultationFee: "₹600",
     description:
       "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
     image: "/images/dr-almas-khan.png",
@@ -154,7 +154,7 @@ export const DoctorsData = [
     timeslot: "5pm to 8pm",
     experience: "11+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹650",
+    consultationFee: "₹600",
     description:
       "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
     image: "/images/dr-mazid-khan-chauhan.png",
