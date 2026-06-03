@@ -87,6 +87,21 @@ export const DoctorsData = [
   },
   {
     id: 6,
+    name: "Dr. Uma Kishore",
+    specialization: "Consultant Nephrology",
+    qualification: "MBBS, MD (Internal Medicine)",
+    rating: "4.7",
+    reviews: "118",
+    timeslot: "6pm to 8pm",
+    experience: "25+ Years Experience",
+    availability: "By appointment only",
+    consultationFee: "₹700",
+    description:
+      "Nephrology is the medical specialty focused on the diagnosis, treatment, and management of kidney diseases and related disorders.",
+    image: "/images/uma-kishore.png",
+  },
+  {
+    id: 7,
     name: "Dr. Iftakharuddin Ansari",
     specialization: "ENT",
     qualification: "MBBS, MS (ENT)",
@@ -101,7 +116,7 @@ export const DoctorsData = [
     image: "/images/dr-iftakar.png",
   },
   {
-    id: 7,
+    id: 8,
     name: "Dr Priyanka Jha",
     specialization: "Obstetrician & Gynaecologist",
     qualification: "MBBS, DGO",
@@ -115,7 +130,7 @@ export const DoctorsData = [
     image: "/images/dr-priyanka-jha.png",
   },
   {
-    id: 8,
+    id: 9,
     name: "Dr. Almas Khan",
     specialization: "General & Laproscopic Surgeon",
     qualification: "MBBS, MS (General Surgery)",
@@ -130,7 +145,7 @@ export const DoctorsData = [
     image: "/images/dr-almas-khan.png",
   },
   {
-    id: 9,
+    id: 10,
     name: "Dr. Farheen Mirza",
     specialization: "Skin Venereal Diseases",
     qualification: "MBBS, DVD, Fellowship Skin Venereal Diseases",
@@ -145,7 +160,7 @@ export const DoctorsData = [
     image: "/images/dr-farheen.png",
   },
   {
-    id: 10,
+    id: 11,
     name: "Dr Mazid Khan Chauhan",
     specialization: "Orthopaedic Specialist",
     qualification: "MBBS, MS (Orthopaedics)",
@@ -160,7 +175,7 @@ export const DoctorsData = [
     image: "/images/dr-mazid-khan-chauhan.png",
   },
   {
-    id: 11,
+    id: 12,
     name: "Dr Ali Salman",
     specialization: "Pediatrician",
     qualification: "MBBS, FIP",
@@ -175,7 +190,7 @@ export const DoctorsData = [
     image: "/images/dr-ali-salman-change.png",
   },
   {
-    id: 12,
+    id: 13,
     name: "Dr. Asif Hussain",
     specialization: "Consultant Orthopaedic & Sports Physiotherapist",
     qualification: "PT, MPT (Ortho), Fellowship in Sports Injury (Moscow)",

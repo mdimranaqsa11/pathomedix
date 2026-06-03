@@ -36,6 +36,23 @@ const Medicals = [
       "Reliable medical store offering quality medicines, healthcare products, and fast customer service with trusted prescription assistance.",
     image: "/images/aayat-medi.png",
   },
+  {
+    id: 3,
+    name: "Shri Baba Garib Nath Parmarth Sewa Sansthan Medicos",
+    ownerName: "Karan Singh",
+    type: "Medical Store",
+    rating: "4.8",
+    reviews: "150+",
+    experience: "Patient Trusted Service",
+    availability: "Open Daily",
+    delivery: "All Medicines Available",
+    consultation: "Prescription Support",
+    address:
+      "Swami Haider Daas Ashram, Shop No. 6, Infront of Pant Hospital Gate No. 3, New Delhi - 110002",
+    description:
+      "Providing genuine medicines, healthcare essentials, and dependable patient support with a commitment to quality and care.",
+    image: "/images/Shri-Baba1.png",
+  },
 ];
 
 function MedicalCard() {
