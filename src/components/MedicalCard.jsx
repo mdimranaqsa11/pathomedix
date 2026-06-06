@@ -53,6 +53,22 @@ const Medicals = [
       "Providing genuine medicines, healthcare essentials, and dependable patient support with a commitment to quality and care.",
     image: "/images/Shri-Baba1.png",
   },
+  {
+    id: 5,
+    name: "Darnidar medical store",
+    type: "Medical Store",
+    rating: "4.8",
+    reviews: "140+",
+    experience: "Patient Trusted Service",
+    availability: "Open Daily",
+    delivery: "All Medicines Available",
+    consultation: "Prescription Support",
+    address:
+      "Swami Haider Daas Ashram, Shop No. 6, Infront of Pant Hospital Gate No. 3, New Delhi - 110002",
+    description:
+      "Providing genuine medicines, healthcare essentials, and dependable patient support with a commitment to quality and care.",
+    image: "/images/darnidar.png",
+  },
 ];
 
 function MedicalCard() {
@@ -144,7 +160,7 @@ function MedicalCard() {
               {/* Meidcal Category */}
               <div className="mb-2">
                 <p className="text-xs font-medium uppercase tracking-[0.2em] text-[#9084e5]">
-                  PathoMedix Meidcal
+                  PathoMedix Medical
                 </p>
               </div>
 

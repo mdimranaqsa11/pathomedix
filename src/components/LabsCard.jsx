@@ -51,6 +51,28 @@ const Labs = [
     ],
     image: "/images/abhay-sanjivani-diagnostics.png",
   },
+  {
+    id: 3,
+    name: "Blood tests Laboratory",
+    specialization: "Diagnostic & Pathology Laboratory",
+    qualification: "NABL Certified Laboratory",
+    rating: "4.8",
+    reviews: "320",
+    experience: "10+ Years Experience",
+    availability: "Open Daily for Testing",
+    testFee: "Starts from ₹249",
+    description:
+      "Modern diagnostic laboratory offering reliable pathology testing, preventive health packages, and quick digital reports with professional care.",
+    services: [
+      "Vitamin Test",
+      "Liver Function Test",
+      "Kidney Function Test",
+      "Lipid Profile",
+      "Urine Test",
+      "Health Packages",
+    ],
+    image: "/images/nagar-lab.png",
+  },
 ];
 
 function LabsCard() {
