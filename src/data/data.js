@@ -108,7 +108,7 @@ export const DoctorsData = [
     rating: "4.7",
     reviews: "118",
     timeslot: "6pm to 8pm",
-    experience: "25+ Years Experience",
+    experience: "7+ Years Experience",
     availability: "By appointment only",
     consultationFee: "₹700",
     description:
