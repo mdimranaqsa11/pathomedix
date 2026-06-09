@@ -9,14 +9,14 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹700",
+    consultationFee: "₹1500",
     description:
       "Trusted cardiologist specializing in angiography, angioplasty, heart blockage, and preventive cardiac care.",
     image: "/images/dr-pravin-gupta.png",
   },
   {
     id: 2,
-    name: "Dr. Prerit Agarwal",
+    name: "Dr. P. Agarwal",
     specialization: "Senior Cardiac Surgeon",
     qualification: "MBBS, MS, M.Ch (CTVS)",
     rating: "4.9",
@@ -24,7 +24,7 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹800",
+    consultationFee: "₹1500",
     description:
       "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
     image: "/images/dr-prerit-agarwal.png",
@@ -39,7 +39,7 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹700",
+    consultationFee: "₹1500",
     description:
       "Experienced gastrointestinal and hepatobiliary surgeon specializing in advanced laparoscopic and robotic surgeries with patient-focused surgical care.",
     expertise: [
@@ -62,7 +62,7 @@ export const SpaicelDr = [
     timeslot: "6pm to 8pm",
     experience: "10+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹600",
+    consultationFee: "₹1500",
     description:
       "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
     image: "/images/dr-anu-aggarwal.png",
@@ -80,7 +80,7 @@ export const DoctorsData = [
     timeslot: "6pm to 8pm",
     experience: "12+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹500",
+    consultationFee: "₹600",
     description:
       "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
     image: "/images/dr-sajid-rana.png",
@@ -95,7 +95,7 @@ export const DoctorsData = [
     timeslot: "6pm to 8pm",
     experience: "25+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹700",
+    consultationFee: "₹800",
     description:
       "Nephrology is the medical specialty focused on the diagnosis, treatment, and management of kidney diseases and related disorders.",
     image: "/images/uma-kishore.png",
@@ -110,7 +110,7 @@ export const DoctorsData = [
     timeslot: "6pm to 8pm",
     experience: "7+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹700",
+    consultationFee: "₹800",
     description:
       "A senior neuropsychiatrist specializes in diagnosing and treating complex conditions that intersect the brain and behavior.",
     image: "/images/Arish-khan1.png",
@@ -125,7 +125,7 @@ export const DoctorsData = [
     timeslot: "5pm to 8pm",
     experience: "7+ Years Experience",
     availability: "By appointment only",
-    consultationFee: "₹500",
+    consultationFee: "₹600",
     description:
       ". These specialists are experts in both the medical and surgical management of diseases and conditions affecting the ear, nose, throat, and head and neck region. ",
     image: "/images/dr-iftakar.png",
@@ -139,7 +139,7 @@ export const DoctorsData = [
     reviews: "186",
     experience: "7+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹600",
+    consultationFee: "₹700",
     description:
       "Experienced Obstetrician & Gynaecologist providing expert care for pregnancy, women’s health, menstrual disorders, infertility consultation, and advanced gynecological treatments with a patient-first approach.",
     image: "/images/dr-priyanka-jha.png",
@@ -169,7 +169,7 @@ export const DoctorsData = [
     timeslot: "5pm to 11pm",
     experience: "5+ Years Experience",
     availability: "Available for Consultation",
-    consultationFee: "₹450",
+    consultationFee: "₹500",
     description:
       "Venereal diseases (sexually transmitted infections) that affect the skin often present as rashes, bumps, sores, or genital warts",
     image: "/images/dr-farheen.png",
