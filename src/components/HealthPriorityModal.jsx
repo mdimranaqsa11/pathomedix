@@ -299,7 +299,7 @@ export default function HealthPriorityModal() {
                         </div>
 
                         <p className="text-lg sm:text-xl font-bold text-[#7c68eb]">
-                          ₹400
+                          ₹500
                         </p>
                       </motion.div>
 
@@ -329,7 +329,7 @@ export default function HealthPriorityModal() {
                         </div>
 
                         <p className="text-lg sm:text-xl font-bold text-red-500">
-                          ₹500
+                          ₹600
                         </p>
                       </motion.div>
                     </div>
