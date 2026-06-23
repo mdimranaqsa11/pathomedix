@@ -183,8 +183,9 @@ export default function HeroSection() {
           </div>
 
           {/* Heading */}
-          <h1 className="max-w-2xl hidden sm:block text-2xl sm:text-5xl font-medium leading-[1.05] tracking-tight text-black">
-            Healthcare services <br /> at your doorstep
+          <h1 className="max-w-2xl hidden sm:block text-2xl sm:text-5xl font-medium leading-15 tracking-tight text-black">
+            Connect with Expert <br /> Doctors in Just{" "}
+            <span className="text-[#9084e5]">5 Minutes</span>
           </h1>
 
           {/* Description */}
@@ -206,24 +207,29 @@ export default function HeroSection() {
             </button>
           </div>
 
-          {/* Services Grid */}
-          <div className="mt-10 grid grid-cols-3 gap-2 sm:gap-3 lg:gap-4">
+          {/* Services Grid - Clean & Minimal */}
+          <div className="mt-10 grid grid-cols-6 gap-2 sm:gap-3 lg:gap-4">
             {services.map((service, index) => {
               const Icon = service.icon;
+              const colSpan =
+                index < 3
+                  ? "col-span-2"
+                  : index < 5
+                    ? "col-span-3"
+                    : "col-span-6";
               return (
                 <div
                   key={index}
                   onClick={() => setSelectedService(service)}
-                  className="group relative z-10 cursor-pointer rounded-xl sm:rounded-2xl lg:rounded-3xl border border-black/5 bg-[#fafafe] p-2.5 sm:p-3.5 lg:p-5 transition hover:-translate-y-1 hover:border-[#9084e5]/20 hover:bg-white hover:shadow-[0_20px_40px_rgba(144,132,229,0.08)]"
+                  className={`group relative z-10 cursor-pointer rounded-xl sm:rounded-2xl border border-[#8778dd]/50 bg-white p-3 sm:p-4 transition duration-300 hover:border-[#8778dd]/90 hover:shadow-[0_15px_35px_rgba(144,132,229,0.08)] hover:-translate-y-1 ${colSpan}`}
                 >
-                  <div className="flex h-8 w-8 sm:h-10 lg:h-12 sm:w-10 lg:w-12 items-center justify-center rounded-lg sm:rounded-xl lg:rounded-2xl bg-[#9084e5]/10 text-[#9084e5]">
-                    <Icon
-                      size={16}
-                      className="sm:w-5 lg:w-6 sm:h-5 lg:h-6"
-                      strokeWidth={2.2}
-                    />
+                  {/* Icon */}
+                  <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-lg bg-[#9084e5]/10 text-[#9084e5]">
+                    <Icon size={18} strokeWidth={2} />
                   </div>
-                  <h3 className="mt-2 sm:mt-3 lg:mt-4 text-xs sm:text-sm lg:text-sm font-semibold text-black line-clamp-2">
+
+                  {/* Title Only */}
+                  <h3 className="mt-2 text-xs sm:text-sm font-semibold text-black line-clamp-2">
                     {service.title}
                   </h3>
                 </div>

@@ -14,11 +14,13 @@ import EmergencyButton from "@/components/EmergencyButton";
 
 import React from "react";
 import SpaicelDoc from "@/components/SpaicelDoc";
+import TripleRowTicker from "@/components/TripleRowTicker";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
+      <TripleRowTicker />
       <SpaicelDoc />
       <DoctersCarocel />
       <LabsCard />

@@ -6,15 +6,15 @@ import Image from "next/image";
 const banners = [
   {
     id: 1,
-    image: "/images/surePath.jpeg",
+    image: "/images/surePath.webp",
   },
   {
     id: 2,
-    image: "/images/banr2P.jpeg",
+    image: "/images/banr2P.webp",
   },
   {
     id: 3,
-    image: "/images/abhay-sanjivani-diagnostics.png",
+    image: "/images/abhay-sanjivani-diagnostics.webp",
   },
   {
     id: 4,

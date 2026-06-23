@@ -12,7 +12,7 @@ export const SpaicelDr = [
     consultationFee: "₹1500",
     description:
       "Trusted cardiologist specializing in angiography, angioplasty, heart blockage, and preventive cardiac care.",
-    image: "/images/dr-pravin-gupta.png",
+    image: "/images/dr-pravin-gupta.webp",
   },
   {
     id: 2,
@@ -27,7 +27,7 @@ export const SpaicelDr = [
     consultationFee: "₹1500",
     description:
       "Advanced cardiac surgeon providing expert treatment for heart surgery and complex cardiovascular conditions.",
-    image: "/images/dr-prerit-agarwal.png",
+    image: "/images/dr-prerit-agarwal.webp",
   },
   {
     id: 3,
@@ -50,7 +50,7 @@ export const SpaicelDr = [
       "Pancreatic Surgery",
       "Advanced Surgical Care",
     ],
-    image: "/images/dr-aabid-hassan.png",
+    image: "/images/dr-aabid-hassan.webp",
   },
   {
     id: 4,
@@ -65,7 +65,7 @@ export const SpaicelDr = [
     consultationFee: "₹1500",
     description:
       "Experienced respiratory specialist focused on asthma, allergy, lung infection, and breathing-related disorders.",
-    image: "/images/dr-anu-aggarwal.png",
+    image: "/images/dr-anu-aggarwal.webp",
   },
 ];
 
@@ -83,7 +83,7 @@ export const DoctorsData = [
     consultationFee: "₹600",
     description:
       "Dedicated general physician offering consultation for fever, infection, weakness, diabetes, and routine health issues.",
-    image: "/images/dr-sajid-rana.png",
+    image: "/images/dr-sajid-rana.webp",
   },
   {
     id: 6,
@@ -98,7 +98,7 @@ export const DoctorsData = [
     consultationFee: "₹800",
     description:
       "Nephrology is the medical specialty focused on the diagnosis, treatment, and management of kidney diseases and related disorders.",
-    image: "/images/uma-kishore.png",
+    image: "/images/uma-kishore.webp",
   },
   {
     id: 7,
@@ -113,7 +113,7 @@ export const DoctorsData = [
     consultationFee: "₹800",
     description:
       "A senior neuropsychiatrist specializes in diagnosing and treating complex conditions that intersect the brain and behavior.",
-    image: "/images/Arish-khan1.png",
+    image: "/images/Arish-khan1.webp",
   },
   {
     id: 8,
@@ -128,7 +128,7 @@ export const DoctorsData = [
     consultationFee: "₹600",
     description:
       ". These specialists are experts in both the medical and surgical management of diseases and conditions affecting the ear, nose, throat, and head and neck region. ",
-    image: "/images/dr-iftakar.png",
+    image: "/images/dr-iftakar.webp",
   },
   {
     id: 9,
@@ -142,7 +142,7 @@ export const DoctorsData = [
     consultationFee: "₹700",
     description:
       "Experienced Obstetrician & Gynaecologist providing expert care for pregnancy, women’s health, menstrual disorders, infertility consultation, and advanced gynecological treatments with a patient-first approach.",
-    image: "/images/dr-priyanka-jha.png",
+    image: "/images/dr-priyanka-jha.webp",
   },
   {
     id: 11,
@@ -157,7 +157,7 @@ export const DoctorsData = [
     consultationFee: "₹600",
     description:
       "Experienced General & Laproscopic Surgeon providing advanced surgical care with modern minimally invasive procedures and patient-focused treatment.",
-    image: "/images/dr-almas-khan.png",
+    image: "/images/dr-almas-khan.webp",
   },
   {
     id: 12,
@@ -172,7 +172,7 @@ export const DoctorsData = [
     consultationFee: "₹500",
     description:
       "Venereal diseases (sexually transmitted infections) that affect the skin often present as rashes, bumps, sores, or genital warts",
-    image: "/images/dr-farheen.png",
+    image: "/images/dr-farheen.webp",
   },
   {
     id: 13,
@@ -187,7 +187,7 @@ export const DoctorsData = [
     consultationFee: "₹600",
     description:
       "Orthopaedic specialist focused on bone, joint, ligament, fracture, and spine-related treatments with advanced patient care.",
-    image: "/images/dr-mazid-khan-chauhan.png",
+    image: "/images/dr-mazid-khan-chauhan.webp",
   },
   {
     id: 14,
@@ -202,7 +202,7 @@ export const DoctorsData = [
     consultationFee: "₹500",
     description:
       "Child healthcare specialist providing expert consultation for newborn care, child growth, fever, infections, vaccinations, and pediatric wellness.",
-    image: "/images/dr-ali-salman-change.png",
+    image: "/images/dr-ali-salman-change.webp",
   },
   {
     id: 15,
@@ -217,6 +217,6 @@ export const DoctorsData = [
     consultationFee: "₹400",
     description:
       "Experienced Orthopaedic & Sports Physiotherapist focused on sports injury recovery, pain management, rehabilitation, posture correction, and advanced physiotherapy care.",
-    image: "/images/dr-asif-hussain.png",
+    image: "/images/dr-asif-hussain.webp",
   },
 ];
