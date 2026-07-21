@@ -2,6 +2,7 @@
 "use client";
 
 export default function AboutUs() {
+  
   const reasons = [
     {
       title: "Verified Doctors",
